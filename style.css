@@ -1,0 +1,13 @@
+/*
+Theme Name: BluePrint
+Author: Lemniscate
+*/
+
+/* Reset */
+@import url('styles/common/reset.css');
+@import url('styles/common/container.css');
+@import url('styles/common/form.css');
+
+/* Parts */
+@import url('styles/parts/navbar.css');
+@import url('styles/parts/section-heroimage.css');
