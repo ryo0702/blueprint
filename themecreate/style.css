@@ -1,0 +1,39 @@
+/*
+Theme Name: {{*theme-name*}}
+Author: {{*author*}}
+*/
+
+/* Reset */
+@import url('styles/common/reset.css');
+@import url('styles/common/common.css');
+@import url('styles/common/container.css');
+@import url('styles/common/form.css');
+@import url('styles/common/button.css');
+@import url('styles/common/card.css');
+@import url('styles/common/contents.css');
+
+/* Parts */
+@import url('styles/parts/navbar.css');
+@import url('styles/parts/drawermenu.css');
+@import url('styles/parts/footer.css');
+@import url('styles/parts/section-heroimage.css');
+
+:root{
+  /* default */
+  --body-bgc:#FFF;
+  --body-fc:#333333;
+  --link-fc:#2c4f96;
+  --link-fc-hover:#3b63b5;
+
+  --color-secondary:#e8e8e8;
+
+  --color-danger:#d00000;
+  --color-danger-op:#fff;
+
+  /* card */
+  --color-card-bgc:#FFF;
+
+  /* navbar */
+  --navbar-bgc:#FFF;
+  --navbar-fc:#000;
+}

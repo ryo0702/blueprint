@@ -8,17 +8,6 @@
         </a>
     </div>
 </div>
-
-<div class="drawermenu">
-  <div class="close">
-    <div class="lines">
-      <hr>
-      <hr>
-    </div>
-    <div class="text">閉じる</div>
-  </div>
-  <ul>
-  <li><a href="<?php echo site_url('/'); ?>">トップページ</a></li>
-  <li><a href="<?php echo site_url('/?reference=blueprint'); ?>">リファレンス</a></li>
-  </ul>
-</div>
+<?php 
+include get_template_directory().'/views/parts/drawermenu.php';
+?>

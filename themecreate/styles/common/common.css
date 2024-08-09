@@ -1,0 +1,10 @@
+body {
+  color : var(--body-fc);
+  background-color: var(--body-bgc);
+}
+a {
+  color:var(--link-fc);
+  &:hover {
+    color:var(--link-fc-hover);
+  }
+}

@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-bgc);
+  padding: 10px;
+  color: var(--navbar-fc);
+  height: 60px;
+
+  h1.logo {
+    text-align: center;
+    flex-grow: 1;
+    a {
+      img {
+        width: 100px;
+        max-width:100%;
+      }
+    }
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    .humburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      position: absolute;
+    
+      hr {
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 3px;
+        background-color: var(--navbar-fc);
+        border: none;
+        margin: 0;
+        transition: all 0.3s ease;
+      }
+    
+      &.active {
+        hr:nth-child(1) {
+          transform: rotate(45deg) translate(6px, 6px);
+        }
+    
+        hr:nth-child(2) {
+          opacity: 0;
+        }
+    
+        hr:nth-child(3) {
+          transform: rotate(-45deg) translate(6px, -6px);
+        }
+      }
+    }
+  }
+}
