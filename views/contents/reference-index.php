@@ -110,17 +110,17 @@ $code = null;
 $code = '<div class="row row-3column">
   <div class="col">
     <div class="thumbnail">
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
   <div class="col">
     <div class="thumbnail thumbnail-silver">
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
   <div class="col">
     <div class="thumbnail thumbnail-square">
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
 </div>';
@@ -141,12 +141,12 @@ $code = null;
 $code = '<div class="row row-3column">
   <div class="col">
     <div class="thumbnail thumbnail-radius">
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
   <div class="col">
     <div class="thumbnail thumbnail-frame">
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
   <div class="col">
@@ -155,7 +155,7 @@ $code = '<div class="row row-3column">
         <div class="title">記事タイトルを入れることができます</div>
       </div>
       <div class="overlay"></div>
-      <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+      <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
     </div>
   </div>
 </div>';

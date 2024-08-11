@@ -18,11 +18,11 @@
 $code = '<div class="heroimage hero-h50vh hero-split">
   <div class="content">
     <div class="content-group logo">
-      <h1><img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-logo-hero-white.png" alt=""></h1>
+      <h1><img src="'.get_template_directory_uri().'/images/sample/sample-logo-hero-white.png" alt=""></h1>
     </div>
   </div>
   <div class="overlay overlay-black"></div>
-  <div class="bgi" style="background-image:url(\''.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business03.jpg\');"></div>
+  <div class="bgi" style="background-image:url(\''.get_template_directory_uri().'/images/sample/sample-japanese-business03.jpg\');"></div>
 </div>';
 ?>
       <div class="sample card card-bgc-none">
@@ -39,13 +39,13 @@ echo htmlspecialchars($code);
 $code = '<div class="heroimage hero-h60vh hero-split">
   <div class="content">
     <div class="content-group logo">
-      <h1><img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-logo-hero-white.png" alt=""></h1>
+      <h1><img src="'.get_template_directory_uri().'/images/sample/sample-logo-hero-white.png" alt=""></h1>
     </div>
   </div>
   <div class="overlay overlay-black"></div>
   <div class="bgi">
-    <div class="split-left" style="background-image:url(\''.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business03.jpg\');"></div>
-    <div class="split-right" style="background-image:url(\''.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business02.png\');"></div>
+    <div class="split-left" style="background-image:url(\''.get_template_directory_uri().'/images/sample/sample-japanese-business03.jpg\');"></div>
+    <div class="split-right" style="background-image:url(\''.get_template_directory_uri().'/images/sample/sample-japanese-business02.png\');"></div>
   </div>
 </div>';
 ?>
@@ -87,7 +87,7 @@ $code = '<section>
         </div>
         <div class="col">
           <div class="thumbnail thumbnail-silver">
-            <img src="'.get_template_directory_uri().'/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
           </div>
         </div>
       </div>

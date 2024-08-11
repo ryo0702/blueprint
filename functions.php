@@ -1,5 +1,5 @@
 <?php
-include(get_template_directory().'/themecreate/configs/theme.php');
+include(get_template_directory().'/configs/theme.php');
 
 function create_theme($theme_name = null){
   // ------ config & create main theme dir ---------------
@@ -15,7 +15,7 @@ function create_theme($theme_name = null){
   // ------ Load files ---------------
   // style.css
   $source_file_style_css = $destination_file_style_css = $style_css_content = null;
-  $source_file_style_css = get_template_directory().'/themecreate/style.css';
+  $source_file_style_css = get_template_directory().'/style.css';
   $destination_file_style_css = $main_theme_dir.'/style.css';
   copy($source_file_style_css, $destination_file_style_css);
   $style_css_content = file_get_contents($source_file_style_css);
@@ -23,14 +23,14 @@ function create_theme($theme_name = null){
   file_put_contents($destination_file_style_css, $style_css_content);
 
   // Copy styles directory
-  $source_styles_dir = get_template_directory().'/themecreate/styles';
+  $source_styles_dir = get_template_directory().'/styles';
   $destination_styles_dir = $main_theme_dir.'/styles';
   copy_directory($source_styles_dir, $destination_styles_dir);
 
   // Copy base theme files
   $base_files = ['archive.php', 'functions.php', 'index.php', 'page.php', 'single.php'];
   foreach ($base_files as $file) {
-      $source_file = get_template_directory().'/themecreate/'.$file;
+      $source_file = get_template_directory().'/'.$file;
       $destination_file = $main_theme_dir.'/'.$file;
       copy($source_file, $destination_file);
   }
