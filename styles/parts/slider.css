@@ -1,6 +1,13 @@
-.slider .slick-slide {
-  margin: 0 calc(var(--gutter) / 2);
-}
-.slider .slick-list {
-  margin: 0 calc(var(--gutter) / -2);
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+  & .slick-slide {
+    margin: 0 calc(var(--gutter) / 2);
+    box-sizing: border-box;
+  }
+  & .slick-list {
+    box-sizing: border-box;
+    margin: 0 calc(var(--gutter) / -2);
+  }
 }

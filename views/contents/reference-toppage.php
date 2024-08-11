@@ -1,19 +1,19 @@
 <div class="heroimage hero-h60vh hero-split">
   <div class="content">
     <div class="content-group logo">
-      <h1><img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-logo-hero-white.png" alt=""></h1>
+      <h1><img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-logo-hero-white.png" alt=""></h1>
     </div>
   </div>
   <div class="overlay overlay-black"></div>
   <div class="bgi">
-    <div class="split-left" style="background-image:url('<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business03.jpg');"></div>
-    <div class="split-right" style="background-image:url('<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business02.png');">x</div>
+    <div class="split-left" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business03.jpg');"></div>
+    <div class="split-right" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business02.png');"></div>
   </div>
 </div>
 
 <main class="contents">
 
-  <section>
+<section>
     <div class="container position-relative">
       <div class="text-xxl text-bg-title fc-tertiary">enjoy working</div>
       <div class="row row-3-4column gutter-l">
@@ -32,43 +32,22 @@
         </div>
         <div class="col">
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
         </div>
       </div>
     </div>
 
     <ul class="slider mt-xl" data-slick='{"infinite":true,"autoplay":true,"autoplaySpeed": 0,"slidesToShow":3,"slidesToScroll":1,"speed":8000,"centerMode":true,"cssEase":"linear"}'>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="thumbnail thumbnail-silver">
-          <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
-        </div>
-      </li>
+      <?php
+      for ($i=0; $i <= 8; $i++) {
+        echo '<li>
+          <div class="thumbnail thumbnail-silver">
+            <img src="'.get_template_directory_uri().'/images/sample/sample-japanese-business01.png" alt="">
+          </div>
+        </li>';
+      }
+      ?>
     </ul>
   </section>
 
@@ -82,7 +61,7 @@
         <div class="col position-relative">
           <div class="badge badge-circle">1</div>
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">会社概要</a></h3>
@@ -92,7 +71,7 @@
         <div class="col position-relative">
           <div class="badge badge-circle">2</div>
           <div class="thumbnail thumbnail-silver ">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">採用情報</a></h3>
@@ -102,7 +81,7 @@
         <div class="col position-relative">
           <div class="badge badge-circle">3</div>
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">IR情報</a></h3>
@@ -112,7 +91,7 @@
         <div class="col position-relative">
           <div class="badge badge-circle">4</div>
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">IR情報</a></h3>
@@ -124,7 +103,7 @@
   </section>
 
   <div class="heroimage hero-h50vh">
-    <div class="bgi" style="background-image:url('<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png');">
+    <div class="bgi" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png');">
     </div>
   </div>
 
@@ -137,7 +116,7 @@
       <div class="row row-3column">
         <div class="col">
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">会社概要</a></h3>
@@ -146,7 +125,7 @@
         </div>
         <div class="col">
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">採用情報</a></h3>
@@ -155,7 +134,7 @@
         </div>
         <div class="col">
           <div class="thumbnail thumbnail-silver">
-            <img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-japanese-business01.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-japanese-business01.png" alt="">
           </div>
           <div class="texts mt-m">
             <h3><a href="" class="text-m-plus">IR情報</a></h3>
@@ -202,22 +181,23 @@
       </div>
       <div class="row row-4column">
         <div class="col">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-banner.png" alt="" /></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-banner.png" alt="" /></a>
           <div class="mt-xs tac text-s"><a href="">一般社団法人 架空団体三歩琉協会</a></div>
         </div>
         <div class="col">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-banner.png" alt="" /></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-banner.png" alt="" /></a>
           <div class="mt-xs tac text-s"><a href="">一般社団法人 架空団体三歩琉協会</a></div>
         </div>
         <div class="col">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-banner.png" alt="" /></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-banner.png" alt="" /></a>
           <div class="mt-xs tac text-s"><a href="">一般社団法人 架空団体三歩琉協会</a></div>
         </div>
         <div class="col">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/themecreate/images/sample/sample-banner.png" alt="" /></a>
+          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample/sample-banner.png" alt="" /></a>
           <div class="mt-xs tac text-s"><a href="">一般社団法人 架空団体三歩琉協会</a></div>
         </div>
       </div>
     </div>
   </section>
+  
 </main>
