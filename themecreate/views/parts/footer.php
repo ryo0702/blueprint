@@ -3,7 +3,9 @@
   <div class="agree"><button type="button" class="button button-ghost button-ghost-white button-block" name="agree" value="on">同意する</button></div>
 </div>
 
-<div class="loading-screen"></div>
+<div class="loading-screen">
+  <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" /></div>
+</div>
 
 <footer class="footer footer-copyright">
   <div class="copyright">&copy; <?php echo date("Y"); ?> <?php echo get_bloginfo('name'); ?>. All rights reserved.</div>

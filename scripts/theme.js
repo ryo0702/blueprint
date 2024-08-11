@@ -33,8 +33,11 @@ jQuery(document).ready(function($) {
 
     // Loading Screen
     $(window).on('load', function() {
-        $('.loading-screen').fadeOut(300);
+        $('.loading-screen').fadeOut(300, function() {
+            $('body').removeClass('no-scroll'); // ローディング画面が消えたらスクロールを許可
+        });
     });
+    $('body').addClass('no-scroll');
 
     // Slick Slider
     $('.slider').slick();

@@ -194,7 +194,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="bgc-tertiary">
     <div class="container">
       <div class="title-group">
         <h2 class="title">関連企業・団体</h2>
