@@ -1,0 +1,22 @@
+.list-index {
+  & > li {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); /* 垂直方向の中央揃え */
+      width: 10px;
+      height: 10px;
+      background-color: #787878;
+    }
+  }
+}

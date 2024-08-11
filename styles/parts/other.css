@@ -1,0 +1,26 @@
+.code {
+  background-color: #0d1523;
+  color:#b7c5dd;
+  font-size:0.8em;
+  line-height:180%;
+  letter-spacing: 0.08rem;
+  padding:var(--space-m);
+  white-space: pre-wrap;
+  & > pre {
+    white-space: pre-wrap;
+    & > code {white-space: pre-wrap;}
+  }
+}
+
+.sample {
+  padding-top:var(--space-l);
+  padding-bottom:var(--space-l);
+  position: relative;
+  & > .sample-title {
+    position: absolute;
+    top:0;
+    left:0;
+    font-size:0.6rem;
+    padding:var(--space-xs);
+  }
+}

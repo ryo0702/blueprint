@@ -1,0 +1,101 @@
+/* Size */
+.text-m {
+  font-size:var(--common-fs);
+  line-height:160%;
+  letter-spacing: 0.08rem;
+}
+.text-m-plus {
+  font-size:calc(var(--common-fs) + 3px);
+  line-height:160%;
+  letter-spacing: 0.08rem;
+}
+.text-s {
+  font-size:var(--text-s);
+  line-height:160%;
+  letter-spacing: 0.08rem;
+}
+.text-xs {
+  font-size:var(--text-xs);
+  line-height:160%;
+  letter-spacing: 0.08rem;
+}
+.text-l {
+  font-size:var(--text-l);
+  line-height:140%;
+  letter-spacing: 0.08rem;
+}
+.text-xl {
+  font-size:var(--text-xl);
+  line-height:140%;
+  letter-spacing: 0.08rem;
+}
+.text-xxl {
+  font-size:var(--text-xxl);
+  line-height:140%;
+  letter-spacing: 0.08rem;
+}
+
+.text-lh-100per {
+  line-height:100%;
+}
+.text-lh-s {
+  line-height:var(--text-lh-s);
+}
+.text-lh-m {
+  line-height:var(--text-lh-m);
+}
+.text-lh-l {
+  line-height:var(--text-lh-l);
+}
+.text-lh-xl {
+  line-height:var(--text-lh-xl);
+}
+
+/* FontFamily */
+.ff-common {
+  font-family:var(--common-ff);
+}
+.ff-eng {
+  font-family:var(--common-ff-eng);
+}
+
+/* Align */
+.tar{
+  text-align:right;
+}
+.tac {
+  text-align:center;
+}
+.tal {
+  text-align:left;
+}
+
+/* color */
+.fc-main {
+  color:var(--color-main);
+}
+.fc-secondary {
+  color:var(--color-secondary);
+}
+.fc-tertiary {
+  color:var(--color-tertiary);
+}
+.fc-danger {
+  color:var(--color-danger);
+}
+
+/* Other */
+.fwb {
+  font-weight:bold;
+}
+.fwn {
+  font-weight:normal;
+}
+
+
+.text-bg-title {
+  z-index:-1;
+  position: absolute;
+  top:calc(var(--space-l) * -1 + 10px);
+  left:calc(var(--space-l) * -1 + 10px);
+}

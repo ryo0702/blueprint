@@ -1,0 +1,6 @@
+.slider .slick-slide {
+  margin: 0 calc(var(--gutter) / 2);
+}
+.slider .slick-list {
+  margin: 0 calc(var(--gutter) / -2);
+}

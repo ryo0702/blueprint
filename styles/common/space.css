@@ -1,0 +1,61 @@
+/* Margin M */
+.m-m {margin:var(--space-m);}
+.mt-m {margin-top:var(--space-m);}
+.mb-m {margin-bottom:var(--space-m);}
+.m-lm {margin-left:var(--space-m);}
+.mr-m {margin-right:var(--space-m);}
+/* Margin L */
+.m-l {margin:var(--space-l);}
+.mt-l {margin-top:var(--space-l);}
+.mb-l {margin-bottom:var(--space-l);}
+.ml-l {margin-left:var(--space-l);}
+.mr-l {margin-right:var(--space-l);}
+/* Margin XL */
+.m-xl {margin:var(--space-xl);}
+.mt-xl {margin-top:var(--space-xl);}
+.mb-xl {margin-bottom:var(--space-xl);}
+.ml-xl {margin-left:var(--space-xl);}
+.mr-xl {margin-right:var(--space-xl);}
+/* Margin S */
+.m-s {margin:var(--space-s);}
+.mt-s {margin-top:var(--space-s);}
+.mb-s {margin-bottom:var(--space-s);}
+.ml-s {margin-left:var(--space-s);}
+.mr-s {margin-right:var(--space-s);}
+/* Margin XS */
+.m-xs {margin:var(--space-xs);}
+.mt-xs {margin-top:var(--space-xs);}
+.mb-xs {margin-bottom:var(--space-xs);}
+.ml-xs {margin-left:var(--space-xs);}
+.mr-xs {margin-right:var(--space-xs);}
+
+/* Padding M */
+.p-m {padding:var(--space-m);}
+.pt-m {padding-top:var(--space-m);}
+.pb-m {padding-bottom:var(--space-m);}
+.p-lm {padding-left:var(--space-m);}
+.pr-m {padding-right:var(--space-m);}
+/* Padding L */
+.p-l {padding:var(--space-l);}
+.pt-l {padding-top:var(--space-l);}
+.pb-l {padding-bottom:var(--space-l);}
+.pl-l {padding-left:var(--space-l);}
+.pr-l {padding-right:var(--space-l);}
+/* Padding XL */
+.p-xl {padding:var(--space-xl);}
+.pt-xl {padding-top:var(--space-xl);}
+.pb-xl {padding-bottom:var(--space-xl);}
+.pl-xl {padding-left:var(--space-xl);}
+.pr-xl {padding-right:var(--space-xl);}
+/* Padding S */
+.p-s {padding:var(--space-s);}
+.pt-s {padding-top:var(--space-s);}
+.pb-s {padding-bottom:var(--space-s);}
+.pl-s {padding-left:var(--space-s);}
+.pr-s {padding-right:var(--space-s);}
+/* Padding XS */
+.p-xs {padding:var(--space-xs);}
+.pt-xs {padding-top:var(--space-xs);}
+.pb-xs {padding-bottom:var(--space-xs);}
+.pl-xs {padding-left:var(--space-xs);}
+.pr-xs {padding-right:var(--space-xs);}

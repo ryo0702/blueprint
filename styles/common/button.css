@@ -1,0 +1,112 @@
+.button {
+  background-color: var(--body-fc);
+  color: var(--body-bgc);
+  border: none;
+  padding: calc(var(--space-m) / 2) var(--space-m);
+  font-size:var(--common-fs);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: var(--body-bgc);
+    background-color: #555;
+  }
+
+  &.button-s {
+    font-size:var(--text-s);
+    padding: calc(var(--space-s) / 2) var(--space-s);
+  }
+  &.button-m {
+    font-size:var(--text-m);
+    padding: calc(var(--space-m) / 2) var(--space-m);
+  }
+  &.button-l {
+    font-size:var(--text-s);
+    padding: calc(var(--space-l) / 2) var(--space-l);
+  }
+
+  &.button-radius {
+    border-radius: 5px;
+  }
+
+  &.button-ghost {
+    background-color: transparent;
+    color: var(--body-fc);
+    border: 2px solid var(--body-fc);
+    &:hover {
+      color: var(--body-fc);
+      border: 2px solid var(--body-fc);
+      opacity: 0.8;
+    }
+
+    &.button-ghost-white {
+      color: #fff;
+      border: 2px solid #fff;
+      &:hover {
+        color: #fff;
+        border: 2px solid #fff;
+      }
+    }
+
+    &.button-ghost-black {
+      color: #000;
+      border: 2px solid #000;
+      &:hover {
+        color: #000;
+        border: 2px solid #000;
+      }
+    }
+  }
+
+  &.button-block {
+    display: block;
+    width: 100%;
+  }
+
+  /* Google Icon */
+  &.button-material-symbols-right {
+    padding-right: calc(var(--space-m) / 2);
+    & > span[class*="material-symbols-"]{
+      margin-left: calc(var(--space-m) / 2);
+    }
+  }
+  &.button-material-symbols-left {
+    padding-left: calc(var(--space-m) / 2);
+    & > span[class*="material-symbols-"]{
+      margin-right: calc(var(--space-m) / 2);
+    }
+  }
+
+  &.button-s {
+    &.button-material-symbols-right {
+      padding-right: calc(var(--space-s) / 2);
+      & > span[class*="material-symbols-"]{
+        margin-left: calc(var(--space-s) / 2);
+      }
+    }
+    &.button-material-symbols-left {
+      padding-left: calc(var(--space-s) / 2);
+      & > span[class*="material-symbols-"]{
+        margin-right: calc(var(--space-s) / 2);
+      }
+    }
+  }
+
+  &.button-l {
+    &.button-material-symbols-right {
+      padding-right: calc(var(--space-l) / 2);
+      & > span[class*="material-symbols-"]{
+        margin-left: calc(var(--space-l) / 2);
+      }
+    }
+    &.button-material-symbols-left {
+      padding-left: calc(var(--space-l) / 2);
+      & > span[class*="material-symbols-"]{
+        margin-right: calc(var(--space-l) / 2);
+      }
+    }
+  }
+}

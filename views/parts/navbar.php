@@ -17,8 +17,19 @@
     </div>
     <div class="text">閉じる</div>
   </div>
+  <div class="menu-label">サイトメニュー</div>
   <ul>
-  <li><a href="<?php echo site_url('/'); ?>">トップページ</a></li>
-  <li><a href="<?php echo site_url('/?reference=blueprint'); ?>">リファレンス</a></li>
+    <li><a href="<?php echo site_url('/'); ?>">トップページ</a></li>
+  </ul>
+  <div class="menu-label">リファレンス</div>
+  <ul>
+    <li><a href="<?php echo site_url('/?reference=reference-index'); ?>">インデックス</a></li>
+    <li><a href="<?php echo site_url('/?reference=reference-element'); ?>">要素</a></li>
+    <li><a href="<?php echo site_url('/?reference=reference-contents'); ?>">コンテンツ</a></li>
+    <li><a href="<?php echo site_url('/?reference=reference-toppage'); ?>">トップページサンプル</a></li>
+  </ul>
+  <div class="menu-label">デバッグ</div>
+  <ul>
+    <li><a href="#" id="lsdelete">LS削除</a></li>
   </ul>
 </div>

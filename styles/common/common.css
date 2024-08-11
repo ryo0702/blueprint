@@ -1,9 +1,12 @@
 body {
   color : var(--body-fc);
   background-color: var(--body-bgc);
+  font-size:var(--common-fs);
+  font-family: "Noto Sans JP", sans-serif;
 }
 a {
   color:var(--link-fc);
+  text-decoration:var(--link-text-decoration);
   &:hover {
     color:var(--link-fc-hover);
   }

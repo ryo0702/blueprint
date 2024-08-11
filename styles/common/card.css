@@ -2,4 +2,9 @@
   border:solid 1px var(--color-secondary);
   padding:25px;
   background-color: var(--color-card-bgc);
+
+  &.card-bgc-none {
+    overflow: hidden;
+    background-color: transparent;
+  }
 }

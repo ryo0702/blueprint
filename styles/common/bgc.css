@@ -1,0 +1,14 @@
+.bgc-danger {
+  background-color:var(--color-danger);
+  color:var(--color-danger-op);
+}
+
+.bgc-secondary {
+  background-color:var(--color-secondary);
+  color:var(--color-secondary-op);
+}
+
+.bgc-tertiary {
+  background-color:var(--color-tertiary);
+  color:var(--color-tertiary-op);
+}
