@@ -1,7 +1,14 @@
 main.contents {
+
   & > section {
     padding-top:var(--space-xl);
     padding-bottom:var(--space-xl);
+    &:nth-child(odd) {
+      background-color: var(--body-bgc);
+    }
+    &:nth-child(even) {
+      background-color: var(--color-tertiary);
+    }
   }
 }
 

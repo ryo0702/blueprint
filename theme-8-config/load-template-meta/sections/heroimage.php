@@ -2,13 +2,14 @@
 $insert_gsc_data = $gsc_data_key = $gsc_data_label = $gsc_data_number = null;
 $gsc_data_key = 'heroimage';
 $gsc_data_label = 'ヒーローイメージ';
-$gsc_data_number = 5;
+$gsc_data_number = 10;
 for ($i=1; $i <= $gsc_data_number; $i++) {
   $insert_gsc_data[] = array(
     'title'     => $gsc_data_label .' '.$i,
     'fields'    => array(
       array('id'    => $gsc_data_key.'-'.$i.'-type','type'  => 'select','title' => 'デザイン',
         'options' => array(
+          '' => 'ベーシック',
           'split-bgi' => '背景画像分割',
         ),
       ),
@@ -22,6 +23,12 @@ for ($i=1; $i <= $gsc_data_number; $i++) {
           '' => 'なし',
           'overlay overlay-black' => 'ブラック',
           'overlay overlay-white' => 'ホワイト',
+        ),
+      ),
+      array('id'    => $gsc_data_key.'-'.$i.'-type','type'  => 'select','title' => '高さ',
+        'options' => array(
+          '' => 'ベーシック',
+          'split-bgi' => '背景画像分割',
         ),
       ),
     )

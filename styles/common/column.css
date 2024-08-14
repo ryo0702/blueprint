@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  margin-bottom:calc(var(--gutter) / -1);
   margin-left: calc(var(--gutter) / -2);
   margin-right: calc(var(--gutter) / -2);
   & > [class*='col'] {
@@ -13,10 +14,17 @@
     width:calc(100% + var(--gutter-l));
     margin-left: calc(var(--gutter-l) / -2);
     margin-right: calc(var(--gutter-l) / -2);
+    margin-bottom:calc(var(--gutter) / -1);
     & > [class*='col'] {
       padding-left: calc(var(--gutter-l) / 2);
       padding-right: calc(var(--gutter-l) / 2);
     }
+  }
+  & > .col {
+    margin-bottom:var(--gutter);
+  }
+  &.gutter-l {
+    margin-bottom:var(--gutter-l);
   }
   &.row-2column > .col {
     width: 50%;

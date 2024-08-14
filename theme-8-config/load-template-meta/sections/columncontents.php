@@ -9,7 +9,9 @@ for ($i=1; $i <= $gsc_data_number; $i++) {
     'fields'    => array(
       array('id'    => $gsc_data_key.'-'.$i.'-type','type'  => 'select','title' => 'デザイン',
         'options' => array(
-          $gsc_data_key.'-split-bgi' => '背景画像分割',
+          'autoslider' => 'オートスライダー',
+          '3column' => '3カラム',
+          '4column' => '4カラム',
         ),
       ),
       array('id'    => $gsc_data_key.'-'.$i.'-title','type'  => 'text','title' => 'タイトル'),
@@ -19,10 +21,12 @@ for ($i=1; $i <= $gsc_data_number; $i++) {
           'fields' => array(
               array('id'    => 'title','type'  => 'text','title' => 'タイトル'),
               array('id'    => 'description','type'  => 'textarea','title' => '説明文'),
-              array('id'    => 'link','type'  => 'text','title' => 'リンク'),
+              array('id'    => 'link','type'  => 'link','title' => 'リンク'),
               array('id'    => 'image','type'  => 'media','title' => '画像'),
           )
       ),
+      array('id'    => $gsc_data_key.'-'.$i.'-numbering','type'  => 'switcher','title' => 'ナンバリング'),
+      array('id'    => $gsc_data_key.'-'.$i.'-divimage','type'  => 'switcher','title' => 'DIVから画像へ変更'),
     )
   );
 }

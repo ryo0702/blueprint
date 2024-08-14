@@ -4,8 +4,10 @@ if (!defined('ABSPATH')) {
 }
 $array_metabox_section = $arr_load_sections = array();
 
+include get_template_directory() . "/theme-8-config/load-template-meta/freelayout-config.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/freelayout-sort.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/heroimage.php";
+include get_template_directory() . "/theme-8-config/load-template-meta/sections/imagetext.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/columncontents.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/loop.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/form.php";
