@@ -1,0 +1,47 @@
+{
+    "name": "wptheme-nutrail",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack --mode development --config webpack.config.js",
+        "build": "webpack --mode production",
+        "watch": "webpack --watch --mode production --config webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ryo0702/wptheme-nutrail.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ryo0702/wptheme-nutrail/issues"
+    },
+    "homepage": "https://github.com/ryo0702/wptheme-nutrail#readme",
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.8.1",
+        "file-loader": "^6.2.0",
+        "mini-css-extract-plugin": "^2.7.6",
+        "node-sass": "^9.0.0",
+        "postcss-discard-duplicates": "^6.0.0",
+        "postcss-preset-env": "^9.1.1",
+        "sass-loader": "^13.3.2",
+        "turbolinks": "^5.2.0"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "cssnano": "^6.0.1",
+        "cssnano-preset-advanced": "^6.0.1",
+        "lodash-webpack-plugin": "^0.11.6",
+        "postcss": "^8.4.28",
+        "postcss-cli": "^10.1.0",
+        "postcss-loader": "^7.3.3",
+        "raw-loader": "^4.0.2",
+        "style-loader": "^3.3.3",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    }
+}

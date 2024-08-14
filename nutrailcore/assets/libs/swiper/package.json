@@ -1,0 +1,11 @@
+{
+  "name": "swiper",
+  "version": "8.4.5",
+  "main": "swiper-bundle.min.js",
+  "style": "swiper-bundle.min.css",
+  "homepage": "https://swiperjs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/swiper"
+  }
+}

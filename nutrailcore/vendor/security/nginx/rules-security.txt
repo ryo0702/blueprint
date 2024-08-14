@@ -1,0 +1,36 @@
+# Block WordPress file wp-config.php
+location ~* wp-config.php {
+    deny all;
+}
+
+# Block WordPress xmlrpc.php requests
+location ~* xmlrpc.php {
+    deny all;
+}
+
+# Block WordPress file .htaccess
+location ~* .htaccess {
+    deny all;
+}
+
+# Deny access to all .htaccess files
+location ~ ^.*\.([Hh][Tt][Aa]) {
+  deny all;
+}
+
+# Block wp-includes folder and files
+location ~ ^/wp-admin/includes/ {
+  return 403;
+}
+
+location ~ ^/wp-includes/[^/]+\.php$ {
+  return 403;
+}
+
+location ~ ^/wp-includes/js/tinymce/langs/.+\.php {
+  return 403;
+}
+
+location ~ ^/wp-includes/theme-compat/ {
+  return 403;
+}

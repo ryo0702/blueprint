@@ -1,0 +1,12 @@
+.card {
+    background-color: var(--color-card-bgc);
+    padding:var(--card-padding);
+    border-radius:var(--radius);
+    border:solid 1px var(--color-line);
+    &.card-alpha-white {
+        background-color: rgba(#FFF,0.75);
+    }
+    &.card-alpha-black {
+        background-color: rgba(#000,0.75);
+    }
+}

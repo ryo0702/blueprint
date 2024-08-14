@@ -1,0 +1,192 @@
+body {
+	margin                  : 0;
+	padding                 : 0;
+	-moz-osx-font-smoothing : grayscale;
+	-webkit-font-smoothing  : antialiased;
+}
+
+img {
+	max-width      : 100%;
+	height         : auto;
+	vertical-align : top;
+}
+
+* {
+	box-sizing : border-box;
+}
+
+ul,
+ol {
+	padding         : 0;
+	margin          : 0;
+	list-style-type : none;
+}
+
+p {
+	margin : 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+.table {
+	margin : 0;
+}
+
+a {
+	text-decoration : none;
+}
+
+[type="text"],
+[type="email"],
+[type="password"],
+[type="date"],
+[type="url"],
+[type="tel"],
+textarea,
+select {
+	width              : 100%;
+	padding            : var(--input-padding);
+	border-radius      : var(--input-border-radius);
+	border             : var(--input-border);
+	background-color   : var(--input-background-color);
+	color              : var(--input-font-color);
+	font-weight        : var(--input-font-weight);
+	font-size          : var(--input-font-size);
+	-webkit-appearance : none;
+	font-family        : inherit;
+
+	&::placeholder,
+	&::-webkit-input-placeholder {
+		color       : var(--input-placeholder-color);
+		font-weight : var(--input-font-weight);
+	}
+
+	&:focus {
+		outline : none;
+		border  : var(--input-border-focus);
+	}
+}
+
+select {
+	background      : var(--input-background-color) url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E") no-repeat right 10px top 55%;
+	background-size : auto;
+}
+
+.noscroll {
+	overflow : hidden;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border    : 0;
+	clip      : rect(1px, 1px, 1px, 1px);
+	clip-path : inset(50%);
+	height    : 1px;
+	margin    : -1px;
+	overflow  : hidden;
+	padding   : 0;
+	position  : absolute;
+	width     : 1px;
+	word-wrap : normal; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color : #eee;
+	clip             : auto;
+	clip-path        : none;
+	color            : #444;
+	display          : block;
+	font-size        : 1em;
+	height           : auto;
+	left             : 5px;
+	line-height      : normal;
+	padding          : 15px 23px 14px;
+	text-decoration  : none;
+	top              : 5px;
+	width            : auto;
+	z-index          : 100000;
+	/* Above WP toolbar. */
+}
+
+.screen-reader-text.skip-link:focus {
+	-webkit-clip-path : none;
+	clip-path         : none
+}
+
+/* Loading */
+.loader,
+.loading {
+	position : relative;
+	@include loader();
+}
+
+.turbolinks-progress-bar {
+	position        : fixed !important;
+	background      : rgba(0, 0, 0, 0.6);
+	z-index         : 99999;
+	top             : 0;
+	left            : 0;
+	right           : 0;
+	bottom          : 0;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	height          : 100% !important;
+	width           : 100% !important;
+	opacity         : 1 !important;
+}
+
+.turbolinks-progress-bar::before {
+	content       : "";
+	top           : calc(50% - 24px);
+	left          : calc(50% - 24px);
+	width         : 48px;
+	height        : 48px;
+	border-radius : 50%;
+	display       : inline-block;
+	position      : absolute;
+	border        : 3px solid;
+	border-color  : #FFF #FFF transparent;
+	box-sizing    : border-box;
+	animation     : rotation 1s linear infinite;
+}
+
+.turbolinks-progress-bar::after {
+	content          : "";
+	box-sizing       : border-box;
+	position         : absolute;
+	top              : calc(50% - 12px);
+	left             : calc(50% - 12px);
+	margin           : auto;
+	border           : 3px solid;
+	border-color     : transparent #FF3D00 #FF3D00;
+	width            : 24px;
+	height           : 24px;
+	border-radius    : 50%;
+	animation        : rotationBack 0.5s linear infinite;
+	transform-origin : center center;
+}
+
+@keyframes rotation {
+	0% {
+		transform : rotate(0deg);
+	}
+	100% {
+		transform : rotate(360deg);
+	}
+}
+
+@keyframes rotationBack {
+	0% {
+		transform : rotate(0deg);
+	}
+	100% {
+		transform : rotate(-360deg);
+	}
+}

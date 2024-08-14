@@ -1,0 +1,53 @@
+// text and background
+@each $color in $theme-colorset {
+  .text-#{$color} {
+    color : var(--color-#{$color});
+  }
+
+  .text-#{$color}-text {
+    color : var(--color-#{$color}-text);
+  }
+
+  .text-#{$color}-hover:hover {
+    color : var(--color-#{$color}-text-hover);
+  }
+
+  .bg-#{$color} {
+    background-color : var(--color-#{$color});
+  }
+
+  .bg-#{$color}-text {
+    background-color : var(--color-#{$color}-text);
+  }
+
+  .bg-#{$color}-hover:hover {
+    background-color : var(--color-#{$color}-text-hover);
+  }
+}
+
+.text-body {
+  color : var(--color-body);
+}
+
+.text-body-hover:hover {
+  color : var(--color-body);
+}
+
+.bg-body {
+  background-color : var(--color-body);
+}
+
+.bg-body-hover:hover {
+  background-color : var(--color-body);
+}
+
+#page {
+  section.section {
+    background-color: var(--color-main);
+    color:var(--color-main-text);
+    &:nth-child(even) {
+      color:var(--color-sub-text);
+      background-color: var(--color-sub);
+    }
+  }
+}

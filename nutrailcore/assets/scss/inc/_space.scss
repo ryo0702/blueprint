@@ -1,0 +1,275 @@
+// gutters
+@for $i from 0 through 12 {
+  .g-#{$i} {
+	--gutter-x : #{$i * 5}px;
+	--gutter-y : #{$i * 5}px;
+  }
+
+  .gx-#{$i} {
+	--gutter-x : #{$i * 5}px;
+  }
+
+  .gy-#{$i} {
+	--gutter-y : #{$i * 5}px;
+  }
+}
+
+@each $name, $value in $breakpoints {
+  @for $i from 0 through 12 {
+	.g-#{$name}-#{$i} {
+	  @include mq($name) {
+		--gutter-x : #{$i * 5}px;
+		--gutter-y : #{$i * 5}px;
+	  }
+	}
+
+	.gx-#{$name}-#{$i} {
+	  @include mq($name) {
+		--gutter-x : #{$i * 5}px;
+	  }
+	}
+
+	.gy-#{$name}-#{$i} {
+	  @include mq($name) {
+		--gutter-y : #{$i * 5}px;
+	  }
+	}
+  }
+}
+
+// flex gap
+@for $i from 1 through 12 {
+  .flex-gap-#{$i} {
+	gap : #{$i * 5}px;
+  }
+
+  .flex-column-gap-#{$i} {
+	column-gap : #{$i * 5}px;
+  }
+
+  .flex-row-gap-#{$i} {
+	row-gap : #{$i * 5}px;
+  }
+}
+
+@each $name, $value in $breakpoints {
+  @for $i from 0 through 12 {
+	.flex-#{$name}-gap-#{$i} {
+	  @include mq($name) {
+		gap : #{$i * 5}px;
+	  }
+	}
+
+	.flex-#{$name}-column-gap-#{$i} {
+	  @include mq($name) {
+		column-gap : #{$i * 5}px;
+	  }
+	}
+
+	.flex-#{$name}-row-gap-#{$i} {
+	  @include mq($name) {
+		row-gap : #{$i * 5}px;
+	  }
+	}
+  }
+}
+
+// flex order
+@for $i from 1 through 6 {
+  .order-#{$i} {
+	order : $i;
+  }
+}
+
+@each $name, $value in $breakpoints {
+  @for $i from 1 through 6 {
+	.order-#{$name}-#{$i} {
+	  @include mq($name) {
+		order : $i;
+	  }
+	}
+  }
+}
+
+// spacing
+@each $pixel in $spacing {
+  $space : #{$pixel}px;
+  @if ($pixel == auto) {
+	$space : auto;
+  }
+  @each $key, $val in $units {
+	.#{$key}-#{$pixel} {
+	  #{$val} : $space;
+	}
+
+	.#{$key}l-#{$pixel} {
+	  #{$val}-left : $space;
+	}
+
+	.#{$key}r-#{$pixel} {
+	  #{$val}-right : $space;
+	}
+
+	.#{$key}t-#{$pixel} {
+	  #{$val}-top : $space;
+	}
+
+	.#{$key}b-#{$pixel} {
+	  #{$val}-bottom : $space;
+	}
+
+	.#{$key}x-#{$pixel} {
+	  #{$val}-left  : $space;
+	  #{$val}-right : $space;
+	}
+
+	.#{$key}y-#{$pixel} {
+	  #{$val}-top    : $space;
+	  #{$val}-bottom : $space;
+	}
+  }
+}
+
+@each $pixel in $spacing {
+  $space : #{$pixel}px;
+  @if ($pixel == auto) {
+	$space : auto;
+  }
+  @each $key, $val in $units {
+	@each $name, $value in $breakpoints {
+	  .#{$key}-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val} : $space;
+		}
+	  }
+
+	  .#{$key}l-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-left : $space;
+		}
+	  }
+
+	  .#{$key}r-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-right : $space;
+		}
+	  }
+
+	  .#{$key}t-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-top : $space;
+		}
+	  }
+
+	  .#{$key}b-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-bottom : $space;
+		}
+	  }
+
+	  .#{$key}x-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-left  : $space;
+		  #{$val}-right : $space;
+		}
+	  }
+
+	  .#{$key}y-#{$name}-#{$pixel} {
+		@include mq($name) {
+		  #{$val}-top    : $space;
+		  #{$val}-bottom : $space;
+		}
+	  }
+	}
+  }
+}
+
+// width
+.w-auto {
+  width : auto;
+}
+
+.vw-100 {
+  width : 100vw;
+}
+
+.w-100 {
+  width : 100%;
+}
+
+@for $i from 0 through 100 {
+  $i2 : $i * 10px;
+  .w-#{$i2} {
+	width     : $i2;
+	max-width : 100%;
+  }
+}
+
+// height
+.h-auto {
+  height : auto;
+}
+
+.hw-100 {
+  height : 100vh;
+}
+
+.h-100 {
+  height : 100%;
+}
+
+// Margin
+.mx-auto {
+  margin-left  : auto;
+  margin-right : auto;
+}
+
+@for $i from 0 through 20 {
+  $i2 : $i * 5px;
+  .mb-#{$i2} {
+	margin-bottom : $i2;
+  }
+  .mt-#{$i2} {
+	margin-top : $i2;
+  }
+  .ml-#{$i2} {
+	margin-left : $i2;
+  }
+  .mr-#{$i2} {
+	margin-right : $i2;
+  }
+  .pb-#{$i2} {
+	padding-bottom : $i2;
+  }
+  .pt-#{$i2} {
+	padding-top : $i2;
+  }
+  .pl-#{$i2} {
+	padding-left : $i2;
+  }
+  .pr-#{$i2} {
+	padding-right : $i2;
+  }
+}
+
+@for $i from 1 through 20 {
+  $spacename : $i * 5px;
+  .mb-wrap-#{$spacename} {
+	& > * {
+	  margin-bottom : $spacename;
+	  &:last-child {
+		margin-bottom : 0;
+	  }
+	}
+  }
+  .mr-wrap-#{$spacename} {
+	& > * {
+	  margin-right : $spacename;
+	  &:last-child {
+		margin-right : 0;
+	  }
+	}
+  }
+}
+
+@import "./_space_fmargin_fpadding.scss";

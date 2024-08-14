@@ -1,0 +1,23 @@
+@each $size in $arr_size {
+    @each $uni_class, $uni_value in $units{
+        .f#{$uni_class}tb-#{$size}{
+            #{$uni_value}-top:var(--fm-#{$size});
+            #{$uni_value}-bottom:var(--fm-#{$size});
+        }
+        .f#{$uni_class}lr-#{$size}{
+            #{$uni_value}-left:var(--fm-#{$size});
+            #{$uni_value}-right:var(--fm-#{$size});
+        }
+        @each $posi_class, $posi_value in $arr_position{
+            .f#{$uni_class}#{$posi_class}-#{$size}{
+                #{$uni_value}-#{$posi_value}:var(--fm-#{$size});
+            }
+            .f#{$uni_class}#{$posi_class}-#{$size}-sp0{
+                #{$uni_value}-#{$posi_value}:0;
+                @include mq(md) {
+                    #{$uni_value}-#{$posi_value}:var(--fm-#{$size});
+                }
+            }
+        }
+    }
+}

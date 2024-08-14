@@ -1,0 +1,192 @@
+//
+// Base styles
+//
+.btn {
+  // scss-docs-start btn-css-vars
+  --btn-padding-x          : 10px;
+  --btn-padding-x-s        : 5px;
+  --btn-padding-x-xs       : 3px;
+  --btn-padding-x-l        : 15px;
+  --btn-padding-x-xl       : 20px;
+  --btn-padding-y          : 10px;
+  --btn-padding-y-s        : 5px;
+  --btn-padding-y-xs       : 3px;
+  --btn-padding-y-l        : 20px;
+  --btn-padding-y-xl       : 40px;
+  --btn-font-size          : 14px;
+  --btn-font-size-s        : 12px;
+  --btn-font-size-xs       : 10px;
+  --btn-font-size-l        : 16px;
+  --btn-font-size-xl       : 20px;
+  --btn-font-weight        : normal;
+  --btn-line-height        : 1;
+  --btn-color              : #000;
+  --btn-bg                 : transparent;
+  --btn-border-width       : 0;
+  --btn-border-color       : transparent;
+  --btn-border-radius      : 0;
+  --btn-hover-border-color : transparent;
+  --btn-disabled-opacity   : .65;
+  // scss-docs-end btn-css-vars
+
+  display                  : inline-block;
+  padding                  : var(--btn-padding-x) var(--btn-padding-y);
+  font-size                : var(--btn-font-size);
+  font-weight              : var(--btn-font-weight);
+  line-height              : var(--btn-line-height);
+  color                    : var(--btn-color);
+  background-color         : var(--btn-bg);
+  text-align               : center;
+  text-decoration          : none;
+  vertical-align           : middle;
+  cursor                   : pointer;
+  user-select              : none;
+  border                   : var(--btn-border-width) solid var(--btn-border-color);
+  border-radius            : var(--btn-border-radius);
+
+  &:hover {
+    color            : var(--btn-hover-color);
+    background-color : var(--btn-hover-bg);
+    border-color     : var(--btn-hover-border-color);
+  }
+
+  &:focus-visible {
+    color        : var(--btn-hover-color);
+    border-color : var(--btn-hover-border-color);
+    outline      : 0;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events : none;
+    opacity        : var(--btn-disabled-opacity);
+    box-shadow     : none;
+  }
+
+  &.btn-xs {
+    padding     : var(--btn-padding-x-xs) var(--btn-padding-y-xs);
+    font-size   : var(--btn-font-size-xs);
+    font-weight : bold;
+  }
+
+  &.btn-s {
+    padding     : var(--btn-padding-x-s) var(--btn-padding-y-s);
+    font-size   : var(--btn-font-size-s);
+    font-weight : bold;
+  }
+
+  &.btn-xl {
+    padding     : var(--btn-padding-x-xl) var(--btn-padding-y-xl);
+    font-size   : var(--btn-font-size-xl);
+    font-weight : bold;
+  }
+
+  &.btn-l {
+    padding     : var(--btn-padding-x-l) var(--btn-padding-y-l);
+    font-size   : var(--btn-font-size-l);
+    font-weight : bold;
+  }
+}
+
+@each $color in $theme-colorset {
+  .btn-#{$color} {
+    --btn-bg          : var(--color-#{$color});
+    --btn-hover-bg    : var(--color-#{$color}-hover);
+    --btn-color       : var(--color-#{$color}-text);
+    --btn-hover-color : var(--color-#{$color}-text-hover);
+
+    svg {
+      fill : var(--color-#{$color}-text);
+    }
+  }
+  .btn-#{$color}-opposite {
+    --btn-bg          : var(--color-#{$color}-text);
+    --btn-hover-bg    : var(--color-#{$color}-text-hover);
+    --btn-color       : var(--color-#{$color});
+    --btn-hover-color : var(--color-#{$color}-hover);
+
+    svg {
+      fill : var(--color-#{$color});
+    }
+  }
+  .btn-outline-#{$color} {
+    background-color   : transparent;
+    --btn-border-width : 1px;
+    --btn-border-color : var(--color-#{$color}-text);
+    --btn-color        : var(--color-#{$color}-text);
+    --btn-hover-bg     : var(--color-#{$color}-text);
+    --btn-hover-color  : var(--color-#{$color});
+
+    svg {
+      fill : var(--color-#{$color}-text);
+    }
+  }
+  .btn-outline-#{$color}-opposite {
+    background-color   : transparent;
+    --btn-border-width : 1px;
+    --btn-border-color : var(--color-#{$color});
+    --btn-color        : var(--color-#{$color});
+    --btn-hover-bg     : var(--color-#{$color});
+    --btn-hover-color  : var(--color-#{$color}-text);
+
+    svg {
+      fill : var(--color-#{$color});
+    }
+  }
+  .btn-outline-#{$color}, .btn-outline-#{$color}-opposite {
+    &.btn {
+      padding : calc(var(--btn-padding-x) - 2px) calc(var(--btn-padding-y) - 2px);
+    }
+
+    &.btn-xs {
+      padding : calc(var(--btn-padding-x-xs) - 2px) calc(var(--btn-padding-y-xs) - 2px);
+    }
+
+    &.btn-s {
+      padding : calc(var(--btn-padding-x-s) - 2px) calc(var(--btn-padding-y-s) - 2px);
+    }
+
+    &.btn-xl {
+      padding : calc(var(--btn-padding-x-xl) - 2px) calc(var(--btn-padding-y-xl) - 2px);
+    }
+
+    &.btn-l {
+      padding : calc(var(--btn-padding-x-l) - 2px) calc(var(--btn-padding-y-l) - 2px);
+    }
+  }
+}
+
+.btn-close {
+  --btn-close-color            : #000;
+  --btn-close-bg               : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  --btn-close-opacity          : 0.5;
+  --btn-close-hover-opacity    : 0.75;
+  --btn-close-focus-shadow     : 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --btn-close-focus-opacity    : 1;
+  --btn-close-disabled-opacity : 0.25;
+  --btn-close-white-filter     : invert(1) grayscale(100%) brightness(200%);
+
+  box-sizing                   : content-box;
+  width                        : 1em;
+  height                       : 1em;
+  padding                      : .25em .25em;
+  color                        : var(--btn-close-color);
+  background                   : transparent var(--btn-close-bg) center/1em auto no-repeat;
+  border                       : 0;
+  border-radius                : .375rem;
+  opacity                      : var(--btn-close-opacity);
+  cursor                       : pointer;
+
+  &:hover {
+    color           : var(--btn-close-color);
+    text-decoration : none;
+    opacity         : var(--btn-close-hover-opacity);
+  }
+}
+
+.btn {
+  &.btn-radius {
+    --btn-border-radius : var(--radius);
+  }
+}

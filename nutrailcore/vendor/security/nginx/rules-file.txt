@@ -1,0 +1,6 @@
+# WooCommerce Rules - Protect Files from ms-files.php
+location / {
+  if ($query_string ~* "file=woocommerce_uploads/"){
+    return 403;
+  }
+}

@@ -1,0 +1,4 @@
+# Block Executables
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|jsp|asp|html|htm|shtml|sh|cgi|js|swf|suspected)$">
+    deny from all
+</FilesMatch>

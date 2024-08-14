@@ -1,0 +1,10 @@
+.spchara_wrap_ten {
+    & > * {
+        &::after {
+            content: "、";
+        }
+        &:last-child::after {
+            content: "";
+        }
+    }
+}

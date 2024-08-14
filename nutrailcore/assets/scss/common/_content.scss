@@ -1,0 +1,97 @@
+.post-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  form,
+  table {
+    margin-bottom : 20px;
+  }
+
+  small {
+    font-size : 80%;
+  }
+
+  hr {
+    background-color : #ccc;
+    border           : 0;
+    height           : 1px
+  }
+
+  hr, p {
+    margin : 0 0 1.2em
+  }
+
+  li > ol,
+  li > ul {
+    margin-bottom : 0;
+    margin-left   : 1em
+  }
+
+  dt {
+    font-weight : 500
+  }
+
+  dd {
+    margin : 0 0 1.618em
+  }
+
+  blockquote, cite, dfn, em, i {
+    font-style : italic
+  }
+
+  blockquote {
+    padding     : 0 1em;
+    border-left : 3px solid rgba(0, 0, 0, .05)
+  }
+
+  address {
+    margin : 0 0 1.2em
+  }
+
+  pre {
+    background    : rgba(0, 0, 0, .1);
+    font-family   : Courier\ 10 Pitch, Courier, monospace;
+    margin-bottom : 1.618em;
+    padding       : 1.618em;
+    overflow      : auto;
+    max-width     : 100%
+  }
+
+  code, kbd, tt, var {
+    font-family      : Monaco, Consolas, Andale Mono, DejaVu Sans Mono, monospace;
+    background-color : rgba(0, 0, 0, .05);
+    padding          : .202em .5407911001em
+  }
+
+  abbr, acronym {
+    border-bottom : 1px dotted #666;
+    cursor        : help
+  }
+
+  sub,
+  sup {
+    font-size      : 75%;
+    line-height    : 0;
+    position       : relative;
+    vertical-align : baseline;
+  }
+
+  sup {
+    top : -0.5em;
+  }
+
+  sub {
+    bottom : -0.25em;
+  }
+
+  img {
+    display : block;
+    margin  : 0 auto 20px;
+  }
+}

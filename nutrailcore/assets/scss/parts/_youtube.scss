@@ -1,0 +1,28 @@
+iframe.youtube {
+    width:100%;
+    border:none;
+}
+
+.container-xs {
+    iframe.youtube {
+        height:400px;
+        @include mq(md) {
+            height:400px;
+        }
+        @include mq(sm) {
+            height:280px;
+        }
+    }
+}
+
+.container-s {
+    iframe.youtube {
+        height:500px;
+        @include mq(md) {
+            height:500px;
+        }
+        @include mq(sm) {
+            height:320px;
+        }
+    }
+}

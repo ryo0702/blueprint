@@ -1,0 +1,77 @@
+.form {
+  padding : calc(var(--form-padding-x) / 2) calc(var(--form-padding-y) / 2);
+
+  @include mq(md) {
+	padding : var(--form-padding-x) var(--form-padding-y);
+  }
+
+  .form-message {
+	margin-top : 20px;
+	color      : var(--color-action, var(--color-warning));
+
+	&.success {
+	  color : var(--color-success);
+	}
+  }
+
+  .form-control {
+	&.error {
+	  border-color : var(--color-action, var(--color-warning));
+	}
+
+	&.valid {
+	  border-color : var(--color-success);
+	}
+  }
+
+  .form-group {
+	margin-bottom : 30px;
+	align-items   : flex-start;
+
+	&.submit {
+	  text-align : center;
+	}
+
+	&.agree {
+	  text-align  : center;
+	  position    : relative;
+	  padding-top : 20px;
+	  font-size   : 14px;
+
+	  label.error {
+		position   : absolute;
+		left       : 0;
+		right      : 0;
+		top        : 0;
+		text-align : center;
+	  }
+	}
+
+	label.error {
+	  font-size : 13px;
+	  color     : var(--color-action, var(--color-warning));
+	}
+  }
+
+  .form-label {
+	font-weight : var(--form-label-font-weight);
+	font-size   : var(--form-label-font-size);
+	display     : flex;
+	align-items : center;
+
+	.required {
+	  background-color : var(--color-action, var(--color-warning));
+	  color            : #fff;
+	  border-radius    : 3px;
+	  font-size        : 10px;
+	  padding          : 0 10px;
+	  line-height      : 20px;
+	  margin-left      : 15px;
+	}
+  }
+
+  .form-check-inline {
+	display      : inline-block;
+	margin-right : 15px;
+  }
+}

@@ -99,3 +99,9 @@
   top:calc(var(--space-l) * -1 + 10px);
   left:calc(var(--space-l) * -1 + 10px);
 }
+.text-bg-title-right {
+  z-index:-1;
+  position: absolute;
+  top:calc(var(--space-l) * -1 + 10px);
+  right:calc(var(--space-l) * -1 + 10px);
+}

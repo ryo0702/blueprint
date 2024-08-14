@@ -1,0 +1,6 @@
+# WooCommerce Rules - Protect Files from ms-files.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} file=woocommerce_uploads/ [NC]
+RewriteRule /ms-files.php$ - [F]
+</IfModule>

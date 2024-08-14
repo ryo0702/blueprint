@@ -1,0 +1,21 @@
+.cta {
+    .cta-tel {
+        font-size:30px;
+        @include mq(sm) {
+            font-size:16px;
+        }
+        @include mq(md) {
+            font-size:30px;
+        }
+        
+    }
+    .cta-tel-small {
+        font-size:15px;
+        @include mq(sm) {
+            font-size:10px;
+        }
+        @include mq(md) {
+            font-size:15px;
+        }
+    }
+}

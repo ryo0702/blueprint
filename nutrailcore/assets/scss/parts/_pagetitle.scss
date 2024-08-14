@@ -1,0 +1,15 @@
+.page-title {
+    height:var(--pagetitle-h);
+    background-color:var(--pagetitle-bgc);
+    display: flex;
+    align-items: center;
+    h1.title {
+        text-align: center;
+        font-size:var(--ffs-xl);
+        color:var(--pagetitle-fc);
+    }
+    .archive-description {
+        font-size:var(--ffs-s);
+        color:var(--pagetitle-fc);
+    }
+}

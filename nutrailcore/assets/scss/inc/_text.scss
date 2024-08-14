@@ -1,0 +1,213 @@
+// font size
+@each $size in $font-size {
+  .fs-#{$size},
+  h#{$size} {
+    font-size : var(--font-size-h#{$size});
+  }
+}
+
+@each $size in $font-size {
+  @each $name, $value in $breakpoints {
+    .fs-#{$name}-#{$size} {
+      @include mq($name) {
+        font-size : var(--font-size-h#{$size});
+      }
+    }
+  }
+}
+
+// Flexible Font Size
+.ffs-xxl, .ffs-xl, .ffs-l, .ffs-m, .ffs-s, .ffs-xs {
+  line-height    : var(--ffs-lineh-m);
+  letter-spacing : var(--ffls-m);
+}
+
+.ffs-xs {
+  font-size : var(--ffs-xs);
+}
+
+.ffs-s {
+  font-size : var(--ffs-s);
+}
+
+.ffs-m {
+  font-size : var(--ffs-m);
+}
+.ffs-m-plus {
+  font-size : calc(var(--font-size-base) + 4px);
+}
+
+.ffs-l {
+  font-size : var(--ffs-l);
+}
+
+.ffs-xl {
+  font-size : var(--ffs-xl);
+}
+
+.ffs-xxl {
+  font-size : var(--ffs-xxl);
+}
+
+.mq-md-ffs-xs {
+  font-size : var(--ffs-xs);
+}
+
+.mq-md-ffs-s {
+  font-size : var(--ffs-s);
+}
+
+.mq-md-ffs-m {
+  font-size : var(--ffs-m);
+}
+
+.mq-md-ffs-l {
+  font-size : var(--ffs-l);
+}
+
+.mq-md-ffs-xl {
+  font-size : var(--ffs-xl);
+}
+
+.mq-md-ffs-xxl {
+  font-size : var(--ffs-xxl);
+}
+
+// Flexible Font Lineheight
+.fflineh-xs {
+  line-height : var(--fflineh-xs);
+}
+
+.fflineh-s {
+  line-height : var(--fflineh-s);
+}
+
+.fflineh-m {
+  line-height : var(--fflineh-m);
+}
+
+.fflineh-l {
+  line-height : var(--fflineh-l);
+}
+
+.flineh-100per {
+  line-height:100%;
+}
+.lineh-120per {
+  line-height:120%;
+}
+
+// Size Set
+.fs-xs {
+  font-size : 10px;
+}
+
+.fs-s {
+  font-size : 12px;
+}
+
+.fs-m {
+  font-size : 15px;
+}
+
+.fs-l {
+  font-size : 20px;
+}
+
+.fs-xl {
+  font-size : 30px;
+}
+
+.fs-xxl {
+  font-size : 50px;
+}
+
+.fs-small {
+  font-size : var(--font-size-small);
+}
+
+// Font line height
+.flh-100per, .flh-1 {
+  line-height : 100%;
+}
+
+.flh-s {
+  line-height : 120%;
+}
+
+.flh-m {
+  line-height : 180%;
+}
+
+.flh-l {
+  line-height : 200%;
+}
+
+.fls-xs {
+  letter-spacing : 0.05em;
+}
+
+.fls-s {
+  letter-spacing : 0.1em;
+}
+
+.fls-m {
+  letter-spacing : 1.5em;
+}
+
+
+// trim text
+@each $size in $font-size {
+  .text-line-#{$size} {
+    -ms-word-wrap      : break-word;
+    word-wrap          : break-word;
+    overflow           : hidden;
+    text-overflow      : ellipsis;
+    display            : -webkit-box;
+    -webkit-line-clamp : $size;
+    -webkit-box-orient : vertical;
+  }
+}
+
+// text wrap
+.text-nowrap {
+  white-space : nowrap;
+}
+
+// aligns
+.text-left {
+  text-align : left;
+}
+
+.text-right {
+  text-align : right;
+}
+
+.text-center {
+  text-align : center;
+}
+
+.text-justify {
+  text-align : justify;
+}
+
+// font weight
+.fw-bold {
+  font-weight : bold;
+}
+
+.fw-bolder {
+  font-weight : bolder;
+}
+
+.fw-semibold {
+  font-weight : 600;
+}
+
+.fw-normal {
+  font-weight : 400;
+}
+
+.fw-light {
+  font-weight : 300;
+}

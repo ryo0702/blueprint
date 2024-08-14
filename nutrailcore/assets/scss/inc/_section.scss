@@ -1,0 +1,16 @@
+.section {
+    padding-top:100px;
+    padding-bottom:100px;
+
+    &.section-faq {
+        .list {
+            .faq-item-q {
+                color:var(--color-info);
+            }
+            .faq-item-a {
+                color:var(--color-action);
+            }
+            .faq-item-a-text {}
+        }
+    }
+}

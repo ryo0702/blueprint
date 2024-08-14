@@ -1,0 +1,201 @@
+// display
+.d-none {
+  display : none;
+}
+
+.d-block {
+  display : block;
+}
+
+.d-inline-block {
+  display : inline-block;
+}
+
+.d-flex {
+  display : flex;
+}
+
+.flex-wrap {
+  flex-wrap : wrap;
+}
+
+.flex-nowrap {
+  flex-wrap : nowrap;
+}
+
+.flex-column {
+  flex-direction : column;
+}
+
+.flex-row {
+  flex-direction : row;
+}
+
+.d-inline-flex {
+  display : inline-flex;
+}
+
+.justify-content-start {
+  justify-content : flex-start;
+}
+
+.justify-content-end {
+  justify-content : flex-end;
+}
+
+.justify-content-center {
+  justify-content : center;
+}
+
+.justify-content-between {
+  justify-content : space-between;
+}
+
+.align-items-start {
+  align-items : flex-start;
+}
+
+.align-items-end {
+  align-items : flex-end;
+}
+
+.align-items-center {
+  align-items : center;
+}
+
+.align-items-baseline {
+  align-items : baseline;
+}
+
+.align-self-start {
+  align-self : flex-start;
+}
+
+.align-self-end {
+  align-self : flex-end;
+}
+
+.align-self-center {
+  align-self : center;
+}
+
+.align-self-baseline {
+  align-self : baseline;
+}
+
+// display
+@each $name, $value in $breakpoints {
+  .d-#{$name}-none {
+	@include mq($name) {
+	  display : none;
+	}
+  }
+
+  .d-#{$name}-block {
+	@include mq($name) {
+	  display : block;
+	}
+  }
+
+  .d-#{$name}-flex {
+	@include mq($name) {
+	  display : flex;
+	}
+  }
+
+  .d-#{$name}-inline-block {
+	@include mq($name) {
+	  display : inline-block;
+	}
+  }
+
+  .d-#{$name}-inline-flex {
+	@include mq($name) {
+	  display : inline-flex;
+	}
+  }
+
+  .flex-#{$name}-column {
+	@include mq($name) {
+	  flex-direction : column;
+	}
+  }
+
+  .flex-#{$name}-row {
+	@include mq($name) {
+	  flex-direction : row;
+	}
+  }
+
+  .justify-content-#{$name}-start {
+	@include mq($name) {
+	  justify-content : flex-start;
+	}
+  }
+
+  .justify-content-#{$name}-end {
+	@include mq($name) {
+	  justify-content : flex-end;
+	}
+  }
+
+  .justify-content-#{$name}-center {
+	@include mq($name) {
+	  justify-content : center;
+	}
+  }
+
+  .justify-content-#{$name}-between {
+	@include mq($name) {
+	  justify-content : space-between;
+	}
+  }
+
+  .align-items-#{$name}-start {
+	@include mq($name) {
+	  align-items : flex-start;
+	}
+  }
+
+  .align-items-#{$name}-end {
+	@include mq($name) {
+	  align-items : flex-end;
+	}
+  }
+
+  .align-items-#{$name}-center {
+	@include mq($name) {
+	  align-items : center;
+	}
+  }
+
+  .align-items-#{$name}-baseline {
+	@include mq($name) {
+	  align-items : baseline;
+	}
+  }
+
+  .align-self-#{$name}-start {
+	@include mq($name) {
+	  align-self : flex-start;
+	}
+  }
+
+  .align-self-#{$name}-end {
+	@include mq($name) {
+	  align-self : flex-end;
+	}
+  }
+
+  .align-self-#{$name}-center {
+	@include mq($name) {
+	  align-self : center;
+	}
+  }
+
+  .align-self-#{$name}-baseline {
+	@include mq($name) {
+	  align-self : baseline;
+	}
+  }
+}

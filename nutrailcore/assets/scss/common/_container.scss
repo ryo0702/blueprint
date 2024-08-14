@@ -1,0 +1,28 @@
+.container,
+.container_s,.container-s,
+.container_xs,.container-xs {
+  margin-left   : auto;
+  margin-right  : auto;
+  position      : relative;
+  padding-left  : var(--container-space);
+  padding-right : var(--container-space);
+  max-width     : 100%;
+}
+
+.container {
+  @media screen and (min-width : 1200px) {
+    max-width : calc(var(--container) + (var(--container-space) * 2));
+  }
+}
+
+.container_s,.container-s {
+  @media screen and (min-width : 1200px) {
+    max-width : calc(var(--container-s) + (var(--container-space) * 2));
+  }
+}
+
+.container_xs,.container-xs {
+  @media screen and (min-width : 1200px) {
+    max-width : calc(var(--container-xs) + (var(--container-space) * 2));
+  }
+}

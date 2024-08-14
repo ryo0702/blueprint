@@ -1,0 +1,252 @@
+// CSS Config
+:root {
+  // font family
+  --font-body                : "Noto Sans JP", sans-serif;
+
+  // Line height
+  --line-height-base         : 1.5;
+  --line-height-sm           : 1.25;
+  --line-height-lg           : 2;
+
+  // Box shadow
+  --boxshadow                : 0 .5rem 1rem rgba(0, 0, 0, .15);
+  --boxshadow-sm             : 0 .125rem .25rem rgba(0, 0, 0, .075);
+  --boxshadow-lg             : 0 1rem 3rem rgba(0, 0, 0, .175);
+  --boxshadow-inset          : inset 0 1px 2px rgba(0, 0, 0, .075);
+
+  // Font size
+  --font-size-base           : 14px;
+  --font-size-small          : 10px;
+  --font-size-h1             : calc(var(--font-size-base) * 2.5);
+  --font-size-h2             : calc(var(--font-size-base) * 2);
+  --font-size-h3             : calc(var(--font-size-base) * 1.75);
+  --font-size-h4             : calc(var(--font-size-base) * 1.5);
+  --font-size-h5             : calc(var(--font-size-base) * 1.25);
+  --font-size-h6             : var(--font-size-base);
+
+  // Flexible
+  // Flexible Font size
+  --ffs-xs                   : calc(var(--font-size-base) * 0.75);
+  --ffs-s                    : calc(var(--font-size-base) * 0.85);
+  --ffs-m                    : var(--font-size-base);
+  --ffs-l                    : calc(var(--font-size-base) * 2);
+  --ffs-xl                   : calc(var(--font-size-base) * 3);
+  --ffs-xxl                  : calc(var(--font-size-base) * 4);
+
+  --fflineh-l                : 240%;
+  --fflineh-m                : 180%;
+  --fflineh-s                : 140%;
+  --fflineh-xs               : 105%;
+
+  --ffls-l                   : 0.2em;
+  --ffls-m                   : 0.15em;
+  --ffls-s                   : 0.1em;
+
+  // Flexible Margin
+  --fm-base                  : 20px;
+  --fm-xs                    : calc(var(--fm-s) * 0.5);
+  --fm-s                     : calc(var(--fm-m) * 0.5);
+  --fm-m                     : var(--fm-base);
+  --fm-l                     : calc(var(--fm-m) * 2);
+  --fm-xl                    : calc(var(--fm-l) * 2);
+
+  // Radius
+  --radius                   : 0.5em;
+
+  //-- admin setting color group --
+  // color set
+  --color-main               : #ffffff;
+  --color-main-text          : #000000;
+  --color-main-hover         : #f5f5f5;
+  --color-main-text-hover    : #131313;
+  --color-sub                : #f3f3f3;
+  --color-sub-text           : #000000;
+  --color-sub-hover          : #f5f5f5;
+  --color-sub-text-hover     : #131313;
+  --color-action             : #dd0000;
+  --color-action-text        : #ffffff;
+  --color-action-hover       : #be0000;
+  --color-action-text-hover  : #ffffff;
+  --color-info               : #ddf0ff;
+  --color-info-text          : #ffffff;
+  --color-info-hover         : #0171c7;
+  --color-info-text-hover    : #ffffff;
+  --color-success            : #34dd00;
+  --color-success-text       : #ffffff;
+  --color-success-hover      : #51e724;
+  --color-success-text-hover : #ffffff;
+  --color-body               : #ffffff;
+  --color-card-bgc           : #ffffff;
+  --color-text               : #000000;
+  --color-link-text          : #000;
+  --color-link-hover         : #222222;
+  --color-line               : #eeeeee;
+
+  // --------------------------------------
+
+  // wp content
+  --wp-content-fontsize      : var(--ffs-m);
+
+  // --------------------------------------
+
+  // table
+  --talbe-line               : var(--color-line);
+  --talbe-text               : var(--color-main-text);
+  --table-bgc                : var(--color-main);
+  --table-bgc-accent         : var(--color-main);
+  --table-color-striped      : var(--color-main-text);
+  --table-bgc-striped        : var(--color-main-hover);
+  --table-color-active       : var(--color-main-text);
+  --table-bgc-active         : var(--color-main-hover);
+  --table-color-hover        : var(--color-main-text);
+  --table-bgc-hover          : var(--color-main-hover);
+
+  // gutter
+  --gutter-y                 : 15px;
+  --gutter-x                 : 15px;
+
+  // Container
+  --container                : 1042px;
+  --container-s              : 800px;
+  --container-xs             : 600px;
+  --container-space          : 20px;
+
+  // Navbar
+  --navbar-h                 : 80px;
+  --navbar-logo-h            : 50px;
+  --navbar-bgc               : var(--color-main);
+  --navbar-fc                : var(--color-main-text);
+  --navbar-fc-hover          : var(--color-main-text-hover);
+  --navbar-acc               : var(--color-main-text);
+  --navbar-acc-hover         : var(--color-main-text-hover);
+  --color-navbar-top-bg      : var(--color-main);
+  --color-navbar-bottom-bg   : var(--color-main);
+  --color-navbar-link-color  : var(--color-main-text);
+  --color-navbar-link-hover  : var(--color-main-text-hover);
+  // SP
+  --navbar-h-sp              : 60px;
+  --navbar-logo-h-sp         : 25px;
+
+  // Input
+  --input-border             : 1px solid var(--color-line);
+  --input-border-focus       : 1px solid var(--color-success);
+  --input-border-radius      : 3px;
+  --input-font-size          : 18px;
+  --input-padding            : 15px 10px;
+  --input-background-color   : var(--color-main);
+  --input-font-color         : var(--color-main-text);
+  --input-placeholder-color  : var(--color-line);
+  --input-font-weight        : 500;
+
+  // Form
+  --form-padding-x           : 20px;
+  --form-padding-y           : 20px;
+  --form-label-font-weight   : 500;
+  --form-label-font-size     : 18px;
+
+  // Keyvisual
+  --keyvisual-h              : 80vh;
+  
+  // pagetitle
+  --pagetitle-h:40vh;
+  --pagetitle-bgc:var(--color-sub);
+  --pagetitle-fc:var(--color-sub-text);
+
+  // Button
+  --btn-border-radius        : 0;
+
+  // Card
+  --card-padding             : 30px;
+}
+
+// Size
+$arr_position:(
+  "t":"top",
+  "r":"right",
+  "b":"bottom",
+  "l":"left"
+);
+$arr_size  : ('xs','s','m','l','xl');
+
+// Font size
+$font-size      : (1, 2, 3, 4, 5, 6) !default;
+
+// Spacing
+$spacing        : (auto, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70, 80, 90, 100) !default;
+$units          : (
+  "p":"padding",
+  "m":"margin"
+) !default;
+
+// Ratios
+$aspect-ratios  : (
+  "1x1": 100%,
+  "3x4": calc(4 / 3 * 100%),
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);
+
+// Colors
+$theme-colorset : (
+  "main",
+  "sub",
+  "info",
+  "success",
+  "action",
+) !default;
+
+// Breakpoints
+$breakpoints    : (
+  "sm": "screen and (min-width: 0px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+// Libs
+@import "../libs/swiper/swiper-bundle.scss";
+
+// Utilities
+@import "./mixin/mixin_utilities";
+@import "./mixin/mixin_animation";
+@import "./mixin/mixin_grid";
+@import "./mixin/mixin_loader";
+@import "./mixin/mixin_mediaquery";
+
+// Common
+@import "./common/common";
+@import "./common/mq";
+@import "./common/container";
+@import "./common/column";
+@import "./common/button";
+@import "./common/form";
+@import "./common/reset";
+@import "./common/content";
+@import "./common/modal";
+@import "./common/table";
+@import "./common/position";
+
+
+// Includes
+@import "./inc/text";
+@import "./inc/color";
+@import "./inc/display";
+@import "./inc/space";
+@import "./inc/ratio";
+@import "./inc/boxshadow";
+@import "./inc/section";
+@import "./inc/background";
+@import "./inc/spcharacter";
+
+// Parts
+@import "./parts/archive";
+@import "./parts/mainvisual";
+@import "./parts/card";
+@import "./parts/youtube";
+@import "./parts/list";
+@import "./parts/navbar";
+@import "./parts/fixed-panel";
+@import "./parts/cta";
+@import "./parts/pagetitle";
+@import "./parts/wpcontent";

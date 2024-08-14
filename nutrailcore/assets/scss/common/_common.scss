@@ -1,0 +1,33 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing      : border-box;
+  -moz-box-sizing         : border-box;
+  box-sizing              : border-box;
+  -moz-osx-font-smoothing : grayscale;
+  -webkit-font-smoothing  : antialiased;
+}
+
+html {
+  font-family              : sans-serif;
+  -webkit-text-size-adjust : 100%;
+}
+
+body {
+  background-color         : var(--color-body);
+  color                    : var(--color-text);
+  font-family              : var(--font-body);
+  font-size                : var(--font-size-base);
+  line-height              : var(--line-height-base);
+  -webkit-text-size-adjust : 100%;
+  text-rendering           : optimizeLegibility;
+}
+
+a {
+  color : var(--color-link-text);
+
+  &:hover {
+	transition : 0.5s;
+	color      : var(--color-link-hover);
+  }
+}

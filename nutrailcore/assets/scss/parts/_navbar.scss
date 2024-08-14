@@ -1,0 +1,100 @@
+.navbar {
+    width            : 100%;
+    background-color : var(--navbar-bgc);
+    height : var(--navbar-h-sp);
+    @include mq(md) {
+        height : var(--navbar-h);
+    }
+    .navbar-contents {
+        width  : 100%;
+        height : var(--navbar-h-sp);
+        @include mq(md) {
+            height : var(--navbar-h);
+        }
+    }
+
+    &.navbar-basic {
+        .logo {
+            height : var(--navbar-logo-h-sp);
+            @include mq(md) {
+                height : var(--navbar-logo-h);
+            }
+            img {
+                height : var(--navbar-logo-h-sp);
+                @include mq(md) {
+                    height : var(--navbar-logo-h);
+                }
+            }
+        }
+        .contact {
+            .tels {
+                @include mq(sm) {
+                    display: none;
+                }
+                .tel {
+                    font-size:15px;
+                    font-weight: bold;
+                    line-height: 100%;
+                    @include mq(md) {
+                        font-size:35px;
+                        margin-top:3px;
+                    }
+                }
+                .description {
+                    font-size:10px;
+                    text-align: center;
+                    @include mq(md) {
+                        font-size:12px;
+                    }
+                }
+            }
+            .btn.btn-action {
+                font-size:13px;
+                padding:10px;
+            }
+        }
+        .navbar-menu {
+            & > ul {
+                & > li {
+                    margin-right:10px;
+                    &:last-child {margin-right:0;}
+                    position: relative;
+                    & > ul {
+                        display: none;
+                        position : absolute;
+                        top:20px;
+                        left:0;
+                        z-index:100;
+                        background-color : var(--navbar-bgc);
+                        padding:10px;
+                        & > li {
+                            & > a {
+                                width:150px;
+                                font-size:13px;
+                                display: block;
+                                padding:10px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-fixed {
+    position : fixed;
+    z-index  : 9;
+    top      : var(--wp-admin--admin-bar--height, 0px);
+    left     : 0;
+    right    : 0;
+}
+  
+.placeholder-fixed {
+    height : var(--navbar-h-sp);
+    @include mq(md) {
+        height : var(--navbar-h);
+    }
+    width  : 100%;
+}

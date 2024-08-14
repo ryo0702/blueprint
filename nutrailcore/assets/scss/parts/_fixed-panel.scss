@@ -1,0 +1,48 @@
+.fixed-panel {
+    z-index:10;
+    position: fixed;
+    right:25px;
+    bottom:10px;
+    background-color: var(--color-card-bgc);
+    border:solid 1px var(--color-line);
+    width:250px;
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+    .area-text {
+        padding:10px;
+        .btn {
+            display: block;
+            width:100%;
+        }
+    }
+    .close {
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        background-color: var(--color-card-bgc);
+        border:solid 1px var(--color-line);
+        z-index:11;
+        position:absolute;
+        top:-15px;
+        right:-15px;
+        & > div {
+            position: absolute;
+            background-color: #000;
+            width:15px;
+            height:3px;
+            cursor:pointer;
+            &:nth-child(1) {
+                top:12px;
+                left:7px;
+                transform:rotate(45deg);
+            }
+            &:nth-child(2) {
+                top:12px;
+                left:7px;
+                transform:rotate(-45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "countdown",
+  "main": "countdown.min.js",
+  "homepage": "http://hilios.github.io/jQuery.countdown/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hilios/jQuery.countdown"
+  }
+}

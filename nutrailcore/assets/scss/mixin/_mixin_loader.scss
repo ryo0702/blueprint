@@ -1,0 +1,31 @@
+@mixin loader() {
+  &::before {
+	height          : 1em;
+	width           : 1em;
+	display         : block;
+	position        : absolute;
+	top             : 50%;
+	left            : 50%;
+	margin-left     : -0.5em;
+	margin-top      : -0.5em;
+	content         : "";
+	animation       : spin 0.5s linear infinite;
+	background      : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 91.3 91.1'%3E%3Ccircle cx='45.7' cy='45.7' r='45.7'/%3E%3Ccircle fill='%23FFF' cx='45.7' cy='24.4' r='12.5'/%3E%3C/svg%3E") center center;
+	background-size : cover;
+	line-height     : 1;
+	text-align      : center;
+	font-size       : 2em;
+	color           : rgba(#000, 0.75);
+	z-index         : 3;
+  }
+  &::after {
+	content    : "";
+	position   : absolute;
+	z-index    : 2;
+	top        : 0;
+	left       : 0;
+	right      : 0;
+	bottom     : 0;
+	background : rgba(#fff, 0.75);
+  }
+}

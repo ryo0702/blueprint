@@ -1,0 +1,106 @@
+@mixin rows($class: "row", $columns: 12) {
+  .#{$class} {
+	display      : flex;
+	flex-wrap    : wrap;
+	margin-top   : calc(var(--gutter-y) * -1);
+	margin-left  : calc(var(--gutter-x) * -0.5);
+	margin-right : calc(var(--gutter-x) * -0.5);
+  }
+
+  .#{$class}:before,
+  .#{$class}:after {
+	content : "";
+	display : table;
+	clear   : both;
+  }
+
+  .#{$class} > *,
+  .#{$class} [class*="col-"] {
+	width         : 100%;
+	flex          : 0 0 100%;
+	margin-top    : var(--gutter-y);
+	padding-left  : calc(var(--gutter-x) * 0.5);
+	padding-right : calc(var(--gutter-x) * 0.5);
+  }
+
+  .#{$class} .col-auto {
+	width : auto;
+	flex  : 0 0 auto;
+  }
+
+  @for $col from 1 through $columns {
+	$num   : $columns - $col + 1;
+	$width : $num / $columns * 100%;
+
+	.#{$class} .col-#{$num} {
+	  width : $width;
+	  flex  : 0 0 auto;
+	}
+  }
+
+  @each $name, $value in $breakpoints {
+	@for $col from 1 through $columns {
+	  $num   : $columns - $col + 1;
+	  $width : $num / $columns * 100%;
+
+	  .#{$class} .col-#{$name}-#{$num} {
+		@include mq($name) {
+		  width : $width;
+		  flex  : 0 0 auto;
+		}
+	  }
+
+	  .#{$class} .col-#{$name}-auto {
+		@include mq($name) {
+		  width : auto;
+		  flex  : 0 0 auto;
+		}
+	  }
+	}
+  }
+
+  // extend Cols 5
+  $col5 : (
+	15:20%,
+	25:40%,
+	35:60%,
+	45:80%,
+  );
+  @each $name, $value in $breakpoints {
+	@each $num, $width in $col5 {
+	  .#{$class} .col-#{$num} {
+		width : $width;
+		flex  : 0 0 auto;
+	  }
+	  .#{$class} .col-#{$name}-#{$num} {
+		@include mq($name) {
+		  width : $width;
+		  flex  : 0 0 auto;
+		}
+	  }
+	  .#{$class} .col-#{$name}-auto {
+		@include mq($name) {
+		  width : auto;
+		  flex  : 0 0 auto;
+		}
+	  }
+	}
+  }
+
+  // row columns class
+  @for $col from 1 through $columns {
+	.cols-#{$col} .col {
+	  width : 100% / $col;
+	  flex  : 0 0 auto;
+	}
+
+	@each $name, $value in $breakpoints {
+	  .cols-#{$name}-#{$col} .col {
+		@include mq($name) {
+		  width : 100% / $col;
+		  flex  : 0 0 auto;
+		}
+	  }
+	}
+  }
+}

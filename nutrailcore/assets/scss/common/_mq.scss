@@ -1,0 +1,16 @@
+.view-sp{
+    @include mq(sm) {
+        display : block;
+    }
+    @include mq(md) {
+        display : none;
+    }
+}
+.view-pc{
+    @include mq(sm) {
+        display : none;
+    }
+    @include mq(md) {
+        display : block;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "domain": "wpa",
+    "locale_data": {
+        "wpa": {
+            "": {
+                "domain": "wpa",
+                "plural-forms": "n != 1",
+                "lang": "vi"
+            },
+            "Select a Post": [
+                "Chọn bài viết"
+            ]
+        }
+    }
+}

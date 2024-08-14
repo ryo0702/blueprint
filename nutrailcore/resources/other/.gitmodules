@@ -1,0 +1,3 @@
+[submodule "nutrailcore"]
+	path = nutrailcore
+	url = https://github.com/ryo0702/nutrailcore.git

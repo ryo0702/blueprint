@@ -1,0 +1,36 @@
+# Block WordPress file wp-config.php
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+
+# Block WordPress xmlrpc.php requests
+<Files xmlrpc.php>
+order allow,deny
+deny from all
+# allow from xxx.xxx.xxx.xxx
+</Files>
+
+# Block WordPress file .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Deny access to all .htaccess files
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+# Block wp-includes folder and files
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule ^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
