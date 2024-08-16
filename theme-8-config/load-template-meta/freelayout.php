@@ -11,6 +11,7 @@ include get_template_directory() . "/theme-8-config/load-template-meta/sections/
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/columncontents.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/loop.php";
 include get_template_directory() . "/theme-8-config/load-template-meta/sections/form.php";
+include get_template_directory() . "/theme-8-config/load-template-meta/sections/seams.php";
 
 $array_metabox[] = array(
     'id'        => 'config-page',

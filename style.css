@@ -31,6 +31,7 @@ Author: Lemniscate
 @import url('styles/parts/section-heroimage.css');
 @import url('styles/parts/section-imagetext.css');
 @import url('styles/parts/section-news.css');
+@import url('styles/parts/section-seams.css');
 
 /* Other */
 @import url('styles/parts/other.css');
