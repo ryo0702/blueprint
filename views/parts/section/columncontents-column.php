@@ -13,7 +13,12 @@ if(is_array(@$arr_section_data[$section_key_number.'-contents'])){
         $class_thumbnail = '';
       }
       else{
-        $class_thumbnail = 'thumbnail thumbnail-silver';
+        if(!empty($arr_section_data[$section_key_number.'-thumbsize'])){
+          $class_thumbnail = 'thumbnail '.@$arr_section_data[$section_key_number.'-thumbsize'];
+        }
+        else{
+          $class_thumbnail = 'thumbnail';
+        }
       }
       if(!empty($column_content['link']['url'])){
         $section_view_inner2 .= '<a href="'.$column_content['link']['url'].'" class="'.$class_thumbnail.'"><img src="'.$column_content['image']['url'].'" alt="'.@$column_content['image']['alt'].'"></a>';

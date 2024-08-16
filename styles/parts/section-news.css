@@ -3,8 +3,19 @@
   .news-list {
     width:100%;
     & > ul {
+      background-color: var(--body-bgc);
       border-top: 1px solid var(--color-secondary);
       & > li {
+        &:nth-child(odd) {
+          & > a {
+            background-color: var(--body-bgc);
+          }
+        }
+        &:nth-child(even) {
+          & > a {
+            background-color: var(--color-tertiary);
+          }
+        }
         & > a {
           display: block;
           padding: var(--space-m);
@@ -14,7 +25,7 @@
           justify-content: space-between;
           align-items: center;
           &:hover {
-            background-color: var(--color-tertiary);
+            background-color: var(--color-secondary);
           }
           & > .item-titles {
             flex-grow: 1;

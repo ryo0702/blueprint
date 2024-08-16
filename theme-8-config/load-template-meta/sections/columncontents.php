@@ -27,6 +27,12 @@ for ($i=1; $i <= $gsc_data_number; $i++) {
       ),
       array('id'    => $gsc_data_key.'-'.$i.'-numbering','type'  => 'switcher','title' => 'ナンバリング'),
       array('id'    => $gsc_data_key.'-'.$i.'-divimage','type'  => 'switcher','title' => 'DIVから画像へ変更'),
+      array('id'    => $gsc_data_key.'-'.$i.'-thumbsize','type'  => 'select','title' => 'サムネイルサイズ','options' => array(
+        '' => '黄金比',
+        'thumbnail-silver' => '白銀比',
+        'thumbnail-square' => '正方形',
+        'thumbnail-tatenaga' => 'スマホサイズ(9:16)',
+      ),),
     )
   );
 }
