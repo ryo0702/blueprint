@@ -25,10 +25,12 @@ for ($i=1; $i <= $gsc_data_number; $i++) {
           'overlay overlay-white' => 'ホワイト',
         ),
       ),
-      array('id'    => $gsc_data_key.'-'.$i.'-type','type'  => 'select','title' => '高さ',
+      array('id'    => $gsc_data_key.'-'.$i.'-height','type'  => 'select','title' => '高さ',
         'options' => array(
-          '' => 'ベーシック',
-          'split-bgi' => '背景画像分割',
+          'hero-h50vh' => '50VH',
+          'hero-h60vh' => '60VH',
+          'hero-h75vh' => '75VH',
+          'hero-h100vh' => '100VH',
         ),
       ),
     )

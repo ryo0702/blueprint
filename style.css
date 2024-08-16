@@ -29,6 +29,7 @@ Author: Lemniscate
 @import url('styles/parts/slider.css');
 @import url('styles/parts/loading-screen.css');
 @import url('styles/parts/section-heroimage.css');
+@import url('styles/parts/section-imagetext.css');
 @import url('styles/parts/section-news.css');
 
 /* Other */
@@ -51,7 +52,7 @@ Author: Lemniscate
   --color-main-op:#fff;
   --color-secondary:#e8e8e8;
   --color-secondary-op:#333333;
-  --color-tertiary:#f3f3f3;
+  --color-tertiary:#f1f1f1;
   --color-tertiary-op:#333333;
   --color-quartic:#f9f9f9;
   --color-quartic-op:#333333;
@@ -83,6 +84,7 @@ Author: Lemniscate
   --space-xl:100px;
   --gutter:25px;
   --gutter-l:50px;
+  --gutter-xl:100px;
 
   /* loading screen */
   --loading-screen-bgc:#fff;

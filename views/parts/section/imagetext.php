@@ -2,13 +2,13 @@
 // Text
 $section_view_inner = null;
 if(!empty($arr_section_data[$section_key_number.'-title-sub'])){
-  $section_view_inner .= '<div class="text-xxl text-bg-title fc-tertiary">'.nl2br(@$arr_section_data[$section_key_number.'-title-sub']).'</div>';
+  $section_view_inner .= '<div class="text-xxl text-bg-title fc-tertiary z-index-1">'.nl2br(@$arr_section_data[$section_key_number.'-title-sub']).'</div>';
 }
 if(!empty($arr_section_data[$section_key_number.'-title'])){
-  $section_view_inner .= '<h2 class="text-xl">'.nl2br(@$arr_section_data[$section_key_number.'-title']).'</h2>';
+  $section_view_inner .= '<h2 class="text-xl position-relative z-index-2">'.nl2br(@$arr_section_data[$section_key_number.'-title']).'</h2>';
 }
 if(!empty($arr_section_data[$section_key_number.'-description'])){
-  $section_view_inner .= '<p class="mt-l text-m-plus">'.nl2br(@$arr_section_data[$section_key_number.'-description']).'</p>';
+  $section_view_inner .= '<p class="mt-l text-m-plus position-relative z-index-2">'.nl2br(@$arr_section_data[$section_key_number.'-description']).'</p>';
 }
 if(!empty($arr_section_data[$section_key_number.'-btn']['url'])){
   $target = null;
@@ -37,8 +37,8 @@ if(!empty($section_view_inner)){
 
 // Wrap
 if(!empty($section_view)){
-  echo '<section>
-    <div class="container"><div class="row row-4-3column gutter-l">'.$section_view.'</div></div>
+  echo '<section class="imagetext">
+    <div class="container"><div class="row row-4-3column gutter-xl">'.$section_view.'</div></div>
   </section>';
 }
 ?>

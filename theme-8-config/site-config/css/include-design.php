@@ -56,6 +56,7 @@ $include_design_common = array(
   array('id' => 'space-xl','type' => 'number','title' => 'スペース XS','default' => '100','unit' => 'px'),
   array('id' => 'gutter','type' => 'number','title' => 'ガーター','default' => '25','unit' => 'px'),
   array('id' => 'gutter-l','type' => 'number','title' => 'ガーター L','default' => '50','unit' => 'px'),
+  array('id' => 'gutter-xl','type' => 'number','title' => 'ガーター XL','default' => '100','unit' => 'px'),
   // Loading Screen
   array('id' => 'loading-screen-bgc','type' => 'color','title' => 'ローディング 背景色','default' => '#ffffff'),
   array('id' => 'loading-screen-fc','type' => 'color','title' => 'ローディング 文字色','default' => '#333333'),

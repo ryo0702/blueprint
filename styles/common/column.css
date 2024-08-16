@@ -20,6 +20,16 @@
       padding-right: calc(var(--gutter-l) / 2);
     }
   }
+  &.gutter-xl {
+    width:calc(100% + var(--gutter-xl));
+    margin-left: calc(var(--gutter-xl) / -2);
+    margin-right: calc(var(--gutter-xl) / -2);
+    margin-bottom:calc(var(--gutter) / -1);
+    & > [class*='col'] {
+      padding-left: calc(var(--gutter-xl) / 2);
+      padding-right: calc(var(--gutter-xl) / 2);
+    }
+  }
   & > .col {
     margin-bottom:var(--gutter);
   }

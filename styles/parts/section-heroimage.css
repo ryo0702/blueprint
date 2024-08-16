@@ -87,7 +87,7 @@
   }
 
   /* Type Split */
-  &.hero-split {
+  &.split-bgi {
     & > .bgi {
       width: 100%;
       height: 100%;

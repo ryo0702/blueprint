@@ -31,5 +31,5 @@ else{
 }
 
 if(!empty($section_view)){
-  echo '<div class="heroimage hero-h60vh hero-split">'.$section_view.'</div>';
+  echo '<div'.theme_elem_attachment(array('class' => array('heroimage',@$arr_section_data[$section_key_number.'-type'],@$arr_section_data[$section_key_number.'-height']))).'>'.$section_view.'</div>';
 }
