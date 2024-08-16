@@ -104,14 +104,14 @@ function add_custom_styles() {
       $global_config = get_option('config-theme');
     }
     $webfont_include = $insert_webfont = null;
-    if(!empty($global_config['config-design']['webfont'])){
-      $insert_webfont = $include_design_webfont['webfont']['options'][$global_config['config-design']['webfont']];
+    if(!empty($global_config['config-design']['common-ff'])){
+      $insert_webfont = $include_design_webfont['common-ff']['options'][$global_config['config-design']['common-ff']];
       $insert_webfont = str_replace(' ', '+', $insert_webfont);
       $webfont_include .= 'family='.$insert_webfont.'&';
     }
     $insert_webfont = null;
-    if(!empty($global_config['config-design']['webfont-accent'])){
-      $insert_webfont = $include_design_webfont['webfont-accent']['options'][$global_config['config-design']['webfont-accent']];
+    if(!empty($global_config['config-design']['common-ff-eng'])){
+      $insert_webfont = $include_design_webfont['common-ff-eng']['options'][$global_config['config-design']['common-ff-eng']];
       $insert_webfont = str_replace(' ', '+', $insert_webfont);
       $webfont_include .= 'family='.$insert_webfont.'&';
     }

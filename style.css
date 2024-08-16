@@ -36,17 +36,18 @@ Author: Lemniscate
 
 :root{
   /* default */
+  --common-fs:15px;
+  --common-ff:"Noto Sans JP", sans-serif;
+  --common-ff-eng:"Montserrat", sans-serif;
+  --link-text-decoration:none;
+
+  /* デフォルトカラー */
   --body-bgc:#FFF;
   --body-fc:#333333;
   --link-fc:#333333;
   --link-fc-hover:#636363;
-  --link-text-decoration:none;
-  --common-fs:15px;
-  --common-ff:"Noto Sans JP", sans-serif;
-  --common-ff-eng:"Montserrat", sans-serif;
-
-  /* color */
-  --color-main:#004cd0;
+  /* Colors */
+  --color-main:#363636;
   --color-main-op:#fff;
   --color-secondary:#e8e8e8;
   --color-secondary-op:#333333;
