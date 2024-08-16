@@ -46,8 +46,8 @@ add_action('init', 'wpa_register_meta_options');
 function wpa_register_theme_options()
 {
     $options = array();
-    $parent  = glob(get_template_directory().'/config/options/*.php');
-    $child   = glob(get_stylesheet_directory().'/config/options/*.php');
+    $parent  = glob(get_template_directory().'/theme-8-config/options/*.php');
+    $child   = glob(get_stylesheet_directory().'/theme-8-config/options/*.php');
     $path    = array_merge($parent, $child);
     if (!empty($path)) {
         foreach ($path as $option_path) {

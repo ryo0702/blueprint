@@ -8,20 +8,20 @@ $action = add_query_arg(
 );
 
 // Colorgroup
-if (file_exists(NUTRAIL_THEME_DIR.'config/options/option-common-colorgroup.php')) {
-    $colors = include NUTRAIL_THEME_DIR.'config/options/option-common-colorgroup.php';
+if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/options/option-common-colorgroup.php')) {
+    $colors = include NUTRAIL_THEME_DIR.'theme-8-config/options/option-common-colorgroup.php';
 } elseif (file_exists(NUTRAIL_CORE_PATH.'includes/array/option-common-colorgroup.php')) {
     $colors = include NUTRAIL_CORE_PATH.'includes/array/option-common-colorgroup.php';
 }
 // Color
-if (file_exists(NUTRAIL_THEME_DIR.'config/options/option-common-color.php')) {
+if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/options/option-common-color.php')) {
     require_once NUTRAIL_CORE_PATH.'includes/array/option-common-color.php';
 } elseif (file_exists(NUTRAIL_CORE_PATH.'includes/array/option-common-color.php')) {
     require_once NUTRAIL_CORE_PATH.'includes/array/option-common-color.php';
 }
 // Design Content
-if (file_exists(NUTRAIL_THEME_DIR.'config/options/option-common-design-content.php')) {
-    require_once NUTRAIL_THEME_DIR.'config/options/option-common-design-content.php';
+if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/options/option-common-design-content.php')) {
+    require_once NUTRAIL_THEME_DIR.'theme-8-config/options/option-common-design-content.php';
 } elseif (file_exists(NUTRAIL_CORE_PATH.'includes/array/option-common-design-content.php')) {
     require_once NUTRAIL_CORE_PATH.'includes/array/option-common-design-content.php';
 }
