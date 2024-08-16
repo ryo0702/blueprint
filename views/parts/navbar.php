@@ -3,8 +3,8 @@
     </div>
     <h1 class="logo"><a href="<?php echo site_url('/'); ?>">
         <?php
-        if($global_config['logo']['url']){
-            echo '<img src="'.$global_config['logo']['url'].'" alt="'.get_bloginfo('name').'" />';
+        if(!empty($global_config['config-common']['logo']['url'])){
+            echo '<img src="'.$global_config['config-common']['logo']['url'].'" alt="'.get_bloginfo('name').'" />';
         }else{
             echo get_bloginfo('name');
         }
@@ -25,19 +25,23 @@
     </div>
     <div class="text">閉じる</div>
   </div>
-  <div class="menu-label">サイトメニュー</div>
-  <ul>
-    <li><a href="<?php echo site_url('/'); ?>">トップページ</a></li>
-  </ul>
-  <div class="menu-label">リファレンス</div>
-  <ul>
-    <li><a href="<?php echo site_url('/?reference=reference-index'); ?>">インデックス</a></li>
-    <li><a href="<?php echo site_url('/?reference=reference-element'); ?>">要素</a></li>
-    <li><a href="<?php echo site_url('/?reference=reference-contents'); ?>">コンテンツ</a></li>
-    <li><a href="<?php echo site_url('/?reference=reference-toppage'); ?>">トップページサンプル</a></li>
-  </ul>
-  <div class="menu-label">デバッグ</div>
-  <ul>
-    <li><a href="#" id="lsdelete">LS削除</a></li>
-  </ul>
+  <?php
+  wp_nav_menu(array(
+    'theme_location' => 'navbar',
+    'container' => false,
+    'menu_class' => '',
+    'fallback_cb' => '__return_false',
+    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+    'depth' => 1,
+  ));
+  ?>
+  <?php
+  if (is_user_logged_in()){
+    echo '<div class="menu-label">管理メニュー</div>
+    <ul>
+        <li><a href="'.site_url('/wp-admin/').'" id="lsdelete">管理画面</a></li>
+        <li><a href="#" id="lsdelete">LS削除</a></li>
+    </ul>';
+  }
+  ?>
 </div>

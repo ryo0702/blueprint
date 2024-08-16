@@ -73,7 +73,6 @@ if (!function_exists('nutrail_script_defer_parsing')) {
         return $url;
     }
 }
-
 add_filter('clean_url', 'nutrail_script_defer_parsing');
 
 // Disable Gutenberg
