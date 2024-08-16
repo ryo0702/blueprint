@@ -51,7 +51,7 @@ $array_metabox = array(
     merge_array_metaboxs_page(
         array('key' => 'recruit-page','title' => '募集要項ページ','posttype' => 'page'),
         array(
-            array('key' => 'config-recruit','title' => '設定','type' => 'original','path' => NUTRAIL_THEME_DIR.'theme-8-config/options/option-sectio-recruit-page.php'),
+            array('key' => 'config-recruit','title' => '設定','type' => 'original','path' => NUTRAIL_THEME_DIR.'configs/options/option-sectio-recruit-page.php'),
             array('key' => 'jobinfo','title' => '募集要項','type' => 'jobinfo'),
         ),
     ),

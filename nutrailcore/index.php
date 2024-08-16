@@ -30,16 +30,16 @@ define('NUTRAIL_PRESET_URI', NUTRAIL_CORE_URL.'preset');
  * Load Config
  */
 if (file_exists(NUTRAIL_THEME_DIR.'config/index.php')) {
-    require_once NUTRAIL_THEME_DIR.'theme-8-config/index.php';
+    require_once NUTRAIL_THEME_DIR.'configs/index.php';
 } else {
-    if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/admin/admin_menu.php')) {
-        require_once NUTRAIL_THEME_DIR.'theme-8-config/admin/admin_menu.php';
+    if (file_exists(NUTRAIL_THEME_DIR.'configs/admin/admin_menu.php')) {
+        require_once NUTRAIL_THEME_DIR.'configs/admin/admin_menu.php';
     }
-    if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/system.php')) {
-        require_once NUTRAIL_THEME_DIR.'theme-8-config/system.php';
+    if (file_exists(NUTRAIL_THEME_DIR.'configs/system.php')) {
+        require_once NUTRAIL_THEME_DIR.'configs/system.php';
     }
-    if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/admin.php')) {
-        require_once NUTRAIL_THEME_DIR.'theme-8-config/admin.php';
+    if (file_exists(NUTRAIL_THEME_DIR.'configs/admin.php')) {
+        require_once NUTRAIL_THEME_DIR.'configs/admin.php';
     }
 }
 

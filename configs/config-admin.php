@@ -11,7 +11,7 @@ function add_pageexport_submenu() {
 }
 add_action('admin_menu', 'add_pageexport_submenu');
 function pageexport_callback() {
-  get_template_part('/theme-8-config/adminpage/pageexport');
+  get_template_part('/configs/adminpage/pageexport');
 }
 
 function add_pagesetup_submenu() {
@@ -26,5 +26,5 @@ function add_pagesetup_submenu() {
 }
 add_action('admin_menu', 'add_pagesetup_submenu');
 function pagesetup_callback() {
-  get_template_part('/theme-8-config/adminpage/pagesetup');
+  get_template_part('/configs/adminpage/pagesetup');
 }

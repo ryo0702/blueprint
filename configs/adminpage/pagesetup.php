@@ -1,6 +1,6 @@
 <?php
 if(!empty($_POST['submit']) && !empty($_POST['setup-type'])){
-  include(get_template_directory().'/theme-8-config/adminpage/setup/'.@$_POST['setup-type'].'.php');
+  include(get_template_directory().'/configs/adminpage/setup/'.@$_POST['setup-type'].'.php');
 
   $new_page = array(
       'post_title'    => $insert_page_title,

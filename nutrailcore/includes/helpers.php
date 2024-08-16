@@ -298,8 +298,8 @@ function nutrail_get_colors($key = '')
     $colors = [];
     $path   = 'option-common-colorgroup.php';
 
-    if (file_exists(NUTRAIL_THEME_DIR.'theme-8-config/options/'.$path)) {
-        $colors = include NUTRAIL_THEME_DIR.'theme-8-config/options/'.$path;
+    if (file_exists(NUTRAIL_THEME_DIR.'configs/options/'.$path)) {
+        $colors = include NUTRAIL_THEME_DIR.'configs/options/'.$path;
     } elseif (file_exists(NUTRAIL_CORE_PATH.'includes/array/'.$path)) {
         $colors = include NUTRAIL_CORE_PATH.'includes/array/'.$path;
     }

@@ -1,5 +1,5 @@
 <?php
-include get_template_directory() . "/theme-8-config/site-config/css/include-design.php";
+include get_template_directory() . "/configs/site-config/css/include-design.php";
 
 $array_options[] = array(
     'name'        => 'design',

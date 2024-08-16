@@ -3,7 +3,7 @@
 }
 
 $array_options = array();
-foreach (glob(get_template_directory() . "/theme-8-config/site-config/*.php") as $load_configfile) {
+foreach (glob(get_template_directory() . "/configs/site-config/*.php") as $load_configfile) {
     include $load_configfile;
 }
 

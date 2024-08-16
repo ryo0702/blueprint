@@ -157,7 +157,7 @@ if(!empty($_POST['company_pref']) && !empty($_POST['company_city'])){
 }
 
 // Load Array
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit.php';
 
 if(!empty($_POST['submit'])){
 

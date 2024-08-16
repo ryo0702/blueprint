@@ -165,9 +165,9 @@ $array_setup_toppage_recruit = array(
     )
 );
 
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_mv.php';
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_list.php';
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_description.php';
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_features1.php';
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_features2.php';
-require get_template_directory().'/theme-8-config/array/setup/setup_toppage_recruit_features3.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_mv.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_list.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_description.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_features1.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_features2.php';
+require get_template_directory().'/configs/array/setup/setup_toppage_recruit_features3.php';

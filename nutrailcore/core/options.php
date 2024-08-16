@@ -20,7 +20,7 @@ function wpa_register_meta_options()
 
     /* Add options */
     foreach ($match as $prefix => $class) {
-        $filename = "/theme-8-config/array/{$prefix}.php";
+        $filename = "/configs/array/{$prefix}.php";
 
         if (file_exists(get_stylesheet_directory().$filename)) {
             include_once get_stylesheet_directory().$filename;
@@ -46,8 +46,8 @@ add_action('init', 'wpa_register_meta_options');
 function wpa_register_theme_options()
 {
     $options = array();
-    $parent  = glob(get_template_directory().'/theme-8-config/options/*.php');
-    $child   = glob(get_stylesheet_directory().'/theme-8-config/options/*.php');
+    $parent  = glob(get_template_directory().'/configs/options/*.php');
+    $child   = glob(get_stylesheet_directory().'/configs/options/*.php');
     $path    = array_merge($parent, $child);
     if (!empty($path)) {
         foreach ($path as $option_path) {

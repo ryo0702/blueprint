@@ -98,7 +98,7 @@ add_action('add_meta_boxes_page', 'remove_editor_for_template');
 
 
 function add_custom_styles() {
-    include get_template_directory() . "/theme-8-config/site-config/css/include-design.php";
+    include get_template_directory() . "/configs/site-config/css/include-design.php";
     if(!empty(get_option('config-theme'))){
       $global_config = get_option('config-theme');
     }

@@ -9,8 +9,8 @@ if (!class_exists('TGM_Plugin_Activation')) {
 if (!function_exists('nutrail_require_load_plugins')) {
     function nutrail_require_load_plugins()
     {
-        if(file_exists(locate_template('theme-8-config/array/plugins.php'))){
-            include_once locate_template('theme-8-config/array/plugins.php');
+        if(file_exists(locate_template('configs/array/plugins.php'))){
+            include_once locate_template('configs/array/plugins.php');
         }
 
         if (!empty($plugins)) {

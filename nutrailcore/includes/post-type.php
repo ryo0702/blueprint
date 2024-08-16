@@ -6,8 +6,8 @@
 if (!function_exists('nutrail_core_register_cpt')) {
     function nutrail_core_register_cpt()
     {
-        if(file_exists(locate_template('theme-8-config/array/post-type.php'))){
-            include_once locate_template('theme-8-config/array/post-type.php');
+        if(file_exists(locate_template('configs/array/post-type.php'))){
+            include_once locate_template('configs/array/post-type.php');
         }
 
         if (!empty($array_cpt) && is_array(@$array_cpt)) {
